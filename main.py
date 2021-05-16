@@ -59,7 +59,7 @@ class processor:
 		#read the json file.
 
 	def add_new_etf(self,etf,send_pipe):
-		print(etf)
+		#print(etf)
 		self.etfs[etf] = ETF(etf,send_pipe)
 		self.sendpipe.send([NEW_ETF,etf])
 
@@ -73,7 +73,8 @@ class processor:
 				row = row[0]
 				Symbol = find_between(row, "Symbol=", ",")
 				symbol = Symbol[:-3]
-				ts=timestamp_seconds(find_between(row, "MarketTime=", ",")[:-4])
+				time_ = find_between(row, "MarketTime=", ",")[:-4]
+				ts=timestamp_seconds(time_)
 				### ONLY PROCEED IF IT IS IN THE SYMBOL LIST ###57000
 				if symbol in self.symbols and ts>=57000:
 					market = symbol[-2:]
@@ -86,10 +87,9 @@ class processor:
 					etf = data["etf"]
 					weight = data["weight"]
 
-					self.etfs[etf].new_imbalance(side,volume,weight,ts)
+					self.etfs[etf].new_imbalance(side,volume,weight,time_,ts)
 
-					#time.sleep(0.000001)
-				
+					#time.sleep(0.00001)
 
 
 class ETF:
@@ -102,6 +102,9 @@ class ETF:
 		self.data["Δsell"] = 0
 		self.data["B/S"] = 0
 		self.data["ΔB/S"] = 0
+
+
+		self.time = ""
 		self.ts = 0
 		#self.last_ts = 0
 		self.pipe = pipe
@@ -110,7 +113,7 @@ class ETF:
 		self.sell_1min_trailing = []
 		self.bsratio_1min_trailing = []
 
-	def new_imbalance(self,side,quantity,weight,ts):
+	def new_imbalance(self,side,quantity,weight,time_,ts):
 
 		if side =="B":
 			self.data["buy"]+=quantity*weight
@@ -118,11 +121,13 @@ class ETF:
 			self.data["sell"]+=quantity*weight
 
 		if ts -self.ts >=5:
-			self.calc_delta(ts)
+			self.calc_delta(time_,ts)
 
 	"""RUN EVERY 5 SECONDS"""
-	def calc_delta(self,ts):
+	def calc_delta(self,time_,ts):
 
+		time.sleep(0.1)
+		self.time = time_
 		self.ts = ts 
 		self.data["B/S"] = round((self.data["buy"]/(self.data["sell"]+1)),2)
 		self.bsratio_1min_trailing.append(self.data["B/S"])
@@ -130,14 +135,16 @@ class ETF:
 		self.sell_1min_trailing.append(self.data["sell"])
 
 		if len(self.buy_1min_trailing)>=13:
-			self.buy_1min_trailing.pop()
+			self.buy_1min_trailing.pop(0)
 		if len(self.sell_1min_trailing)>=13:
-			self.sell_1min_trailing.pop()
+			self.sell_1min_trailing.pop(0)
 		if len(self.bsratio_1min_trailing)>=13:
-			self.bsratio_1min_trailing.pop()
+			self.bsratio_1min_trailing.pop(0)
 
 		if len(self.buy_1min_trailing)>7:
 			self.data["Δbuy"] = round((self.data["buy"] - self.buy_1min_trailing[-7])/self.buy_1min_trailing[-7],2)
+
+			#print(self.name,self.data["buy"],self.buy_1min_trailing)
 
 		if len(self.sell_1min_trailing)>7:
 			self.data["Δsell"] = round((self.data["sell"] - self.sell_1min_trailing[-7])/self.sell_1min_trailing[-7],2)
@@ -145,7 +152,7 @@ class ETF:
 		if len(self.bsratio_1min_trailing)>7:
 			self.data["ΔB/S"] = round((self.data["B/S"] - self.bsratio_1min_trailing[-7])/self.bsratio_1min_trailing[-7],2)
 
-		self.pipe.send([UPDATE,self.name,self.data])
+		self.pipe.send([UPDATE,self.name,self.data,self.time])
 		#print(self.name,self.data["buy"],self.data["Δbuy"],self.data["sell"],self.data["Δsell"],self.data["B/S"],self.delta_bsratio,self.ts)
 
 ### SYNC EVERY SECOND. 
@@ -165,18 +172,26 @@ class UI:
 
 	def init_pannel(self):
 		self.labels = {"ETF":10,\
-						"B/S":10,\
-						"ΔB/S":10,\
 						"Buy":10,\
 						"ΔBuy":10,\
 						"Sell":10,\
 						"ΔSell":10,\
+						"B/S":10,\
+						"ΔB/S":10,\
 						}
 
 		self.width = list(self.labels.values())
 
+		self.hq = ttk.LabelFrame(self.root,text="Main") 
+		self.hq.place(x=10,rely=0.01,relheight=0.2,relwidth=0.95)
+
+		
+		tk.Label(self.hq, text="time:",width=5,height=5).grid(row=1, column=1)
+		self.time = tk.StringVar(value="")
+		tk.Label(self.hq, textvariable=self.time,width=10,height=5).grid(row=1, column=2)
+
 		self.bg = ttk.LabelFrame(self.root,text="") 
-		self.bg.place(x=10,y=10,relheight=0.95,relwidth=0.95)
+		self.bg.place(x=10,rely=0.2,relheight=0.95,relwidth=0.95)
 
 		self.recreate_labels()
 
@@ -230,15 +245,15 @@ class UI:
 
 		self.label_count+=1
 
-	def update_etf(self,etf,data):
+	def update_etf(self,etf,data,time_):
 		
 		### DATA IS A DIC### 
 		#data = self.etfs[etf]
 
+		self.time.set(time_)
 		for key,item in data.items():
-			print(item)
 			if key== "buy" or key=="sell":
-				self.etfs[etf][key].set(str(round(item//1000/1000000,2))+"m")
+				self.etfs[etf][key].set(str(round(item/1000000000,2))+"m")
 			else:
 				self.etfs[etf][key].set(item)
 
@@ -257,7 +272,8 @@ class UI:
 			if cmd ==UPDATE:
 				etf = info[1]
 				data=info[2]
-				self.update_etf(etf,data)
+				ts=info[3]
+				self.update_etf(etf,data,ts)
 
 
 if __name__ == '__main__':
