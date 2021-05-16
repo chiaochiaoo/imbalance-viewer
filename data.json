@@ -1,4 +1,17 @@
 {
+    "all_etfs": [
+        "XLB",
+        "XLC",
+        "XLE",
+        "XLF",
+        "XLI",
+        "XLK",
+        "XLP",
+        "XLRE",
+        "XLU",
+        "XLV",
+        "XLY"
+    ],
     "LIN": {
         "etf": "XLB",
         "weight": 1558

@@ -6,6 +6,7 @@ import json
 #read csv
 
 d = {}
+d["all_etfs"] = []
 
 def read_file(etf_name,file):
 	global d 
@@ -29,6 +30,7 @@ for file in os.listdir(directory):
 	if filename.endswith(".asm") or filename.endswith(".csv"): 
 		print(filename)
 
+		d["all_etfs"].append(str.upper(filename[:-4]))
 		read_file(str.upper(filename[:-4]),"./db/"+filename)
 		a=pd.read_csv("./db/"+filename, 'r')
 		# with open("./db/"+filename, 'r') as read_obj:
@@ -40,5 +42,7 @@ for file in os.listdir(directory):
 		# 		print(row)
 	else:
 		continue
+
+
 with open('data.json', 'w') as f:
     json.dump(d, f,indent=4)
