@@ -131,8 +131,8 @@ class processor:
 				time_ = find_between(row, "MarketTime=", ",")[:-4]
 				ts=timestamp_seconds(time_)
 				count+=1
-				if count%100 == 0 :
-					print(row)
+				if count%1000 == 0 :
+					print(count)
 				### ONLY PROCEED IF IT IS IN THE SYMBOL LIST ###57000
 				if symbol in self.symbols :
 					
