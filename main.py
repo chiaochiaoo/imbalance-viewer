@@ -24,9 +24,9 @@ PINK = "#FB7356"
 
 
 try:
-	f = open(datetime.now().strftime("%m-%d")+".csv", "x")
+	f = open("saves/"+datetime.now().strftime("%m-%d")+".csv", "x")
 except:
-	f = open(datetime.now().strftime("%m-%d")+".csv", "w")
+	f = open("saves/"+datetime.now().strftime("%m-%d")+".csv", "w")
 f.close()
 
 TEST = False
@@ -120,7 +120,7 @@ class processor:
 		sock.bind((UDP_IP, UDP_PORT))
 
 		count = 0
-		with open(datetime.now().strftime("%m-%d")+".csv", 'a',newline='') as csvfile2:
+		with open("saves/"+datetime.now().strftime("%m-%d")+".csv", 'a',newline='') as csvfile2:
 			writer = csv.writer(csvfile2)
 
 			while True:
