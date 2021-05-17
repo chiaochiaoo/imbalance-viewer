@@ -7,6 +7,7 @@ import multiprocessing
 import threading
 import requests
 import socket
+from datetime import datetime
 
 NEW_ETF ="New ETF"
 UPDATE ="Update"
@@ -22,6 +23,11 @@ DEEPGREEN = "#059a12"
 PINK = "#FB7356"
 
 
+try:
+	f = open(datetime.now().strftime("%m-%d")+".csv", "x")
+except:
+	f = open(datetime.now().strftime("%m-%d")+".csv", "w")
+f.close()
 
 TEST = False
 
@@ -51,6 +57,16 @@ def timestamp(s):
 		return 0
 
 
+
+"""
+
+try:
+	f = open("../../algo_logs/"+datetime.now().strftime("%m-%d")+".txt", "x")
+except:
+	f = open("../../algo_logs/"+datetime.now().strftime("%m-%d")+".txt", "w")
+f.close()
+
+"""
 class processor:
 
 	def __init__(self,send_pipe,TEST):
@@ -90,11 +106,13 @@ class processor:
 		postbody = "http://localhost:8080/SetOutput?region=1&feedtype=IMBALANCE&output=4135&status=on"
 		r= requests.post(postbody)
 
-		if r.status_code ==200:
-			print("request successful")
-		else:
+		while r.status_code !=200:
+			r= requests.post(postbody)
 			print("request failed")
+			break
+			
 
+		print("request successful")
 		UDP_IP = "localhost"
 		UDP_PORT = 4135
 
@@ -102,29 +120,44 @@ class processor:
 		sock.bind((UDP_IP, UDP_PORT))
 
 		count = 0
-		while True:
-			data, addr = sock.recvfrom(1024)
-			row = str(data)
-			Symbol = find_between(row, "Symbol=", ",")
-			symbol = Symbol[:-3]
-			time_ = find_between(row, "MarketTime=", ",")[:-4]
-			ts=timestamp_seconds(time_)
-			count+=1
-			if count%100 == 0 :
-				print(row)
-			### ONLY PROCEED IF IT IS IN THE SYMBOL LIST ###57000
-			if symbol in self.symbols and ts>=57000:
-				market = symbol[-2:]
-				
-				side = find_between(row, "Side=", ",")
-				volume =  int(find_between(row, "Volume=", ","))
-				source = find_between(row, "Source=", ",")
+		with open(datetime.now().strftime("%m-%d")+".csv", 'a',newline='') as csvfile2:
+			writer = csv.writer(csvfile2)
 
-				data = self.data[symbol]
-				etf = data["etf"]
-				weight = data["weight"]
+			while True:
+				data, addr = sock.recvfrom(1024)
+				row = str(data)
+				Symbol = find_between(row, "Symbol=", ",")
+				symbol = Symbol[:-3]
+				time_ = find_between(row, "MarketTime=", ",")[:-4]
+				ts=timestamp_seconds(time_)
+				count+=1
+				if count%100 == 0 :
+					print(row)
+				### ONLY PROCEED IF IT IS IN THE SYMBOL LIST ###57000
+				if symbol in self.symbols :
+					
+					market = Symbol[-2:]
+					source = find_between(row, "Source=", ",")
+					time_ = find_between(row, "MarketTime=", ",")[:-4]
+					ts=timestamp_seconds(time_)
+					procced = False
+					if market =="NQ" and source =="NADQ" and ts>=57000: 
+						procced = True
+					elif market =="NY" and source =="CUTN" and ts<57000:
+						proceed = True
+					elif  market =="NY" and source =="NYSE" and ts>=57000: 
+						procced = True
 
-				self.etfs[etf].new_imbalance(side,volume,weight,time_,ts)
+					if procced:
+						writer.writerow([row])
+						side = find_between(row, "Side=", ",")
+						volume =  int(find_between(row, "Volume=", ","))
+
+						data = self.data[symbol]
+						etf = data["etf"]
+						weight = data["weight"]
+
+						self.etfs[etf].new_imbalance(side,volume,weight,time_,ts)
 
 	def test_mode(self):
 
@@ -132,28 +165,42 @@ class processor:
 		with open('imbalance514.csv') as csv_file:
 			csv_reader = csv.reader(csv_file, delimiter=',')
 			line_count = 1
-			for row in csv_reader:
-				row = row[0]
-				Symbol = find_between(row, "Symbol=", ",")
-				symbol = Symbol[:-3]
-				time_ = find_between(row, "MarketTime=", ",")[:-4]
-				ts=timestamp_seconds(time_)
-				### ONLY PROCEED IF IT IS IN THE SYMBOL LIST ###57000
-				if symbol in self.symbols and ts>=57000:
-					market = symbol[-2:]
-					
-					side = find_between(row, "Side=", ",")
-					volume =  int(find_between(row, "Volume=", ","))
-					source = find_between(row, "Source=", ",")
+			with open(datetime.now().strftime("%m-%d")+".csv", 'a',newline='') as csvfile2:
+				writer = csv.writer(csvfile2)
+				for row in csv_reader:
+					row = row[0]
+					Symbol = find_between(row, "Symbol=", ",")
+					symbol = Symbol[:-3]					
 
-					data = self.data[symbol]
-					etf = data["etf"]
-					weight = data["weight"]
+					### ONLY PROCEED IF IT IS IN THE SYMBOL LIST ###57000
+					if symbol in self.symbols :
+						
+						market = Symbol[-2:]
+						source = find_between(row, "Source=", ",")
+						time_ = find_between(row, "MarketTime=", ",")[:-4]
+						ts=timestamp_seconds(time_)
+						procced = False
+						if market =="NQ" and source =="NADQ" and ts>=57000: 
+							procced = True
+						elif market =="NY" and source =="CUTN" and ts<57000:
+							proceed = True
+						elif  market =="NY" and source =="NYSE" and ts>=57000: 
+							procced = True
 
-					self.etfs[etf].new_imbalance(side,volume,weight,time_,ts)
+						if procced:
+							writer.writerow([row])
+							side = find_between(row, "Side=", ",")
+							volume =  int(find_between(row, "Volume=", ","))
+
+							data = self.data[symbol]
+							etf = data["etf"]
+							weight = data["weight"]
+
+							self.etfs[etf].new_imbalance(side,volume,weight,time_,ts)
 
 					#time.sleep(0.00001)
 
+		print("finished")
 
 class ETF:
 	def __init__(self,name,pipe):
