@@ -5,6 +5,8 @@ import json
 import time
 import multiprocessing
 import threading
+import requests
+import socket
 
 NEW_ETF ="New ETF"
 UPDATE ="Update"
@@ -18,6 +20,10 @@ STRONGGREEN = "#3DFC68"
 STRONGRED = "#FC433D"
 DEEPGREEN = "#059a12"
 PINK = "#FB7356"
+
+
+
+TEST = False
 
 def find_between(data, first, last):
 	try:
@@ -47,7 +53,7 @@ def timestamp(s):
 
 class processor:
 
-	def __init__(self,send_pipe):
+	def __init__(self,send_pipe,TEST):
 
 		with open("data.json") as f:
 			self.data = json.load(f)
@@ -62,15 +68,63 @@ class processor:
 		for i in self.etfs_names:
 			self.add_new_etf(i,self.sendpipe)
 
-		good = threading.Thread(target=self.test_mode, daemon=True)
-		good.start()
+		good = threading.Thread(target=self.running_mode, daemon=True)
+		
 
+		test = threading.Thread(target=self.test_mode, daemon=True)
+		
+		if TEST:
+			test.start()
+		else:
+			good.start()
+		#
 		#read the json file.
 
 	def add_new_etf(self,etf,send_pipe):
 		#print(etf)
 		self.etfs[etf] = ETF(etf,send_pipe)
 		self.sendpipe.send([NEW_ETF,etf])
+
+	def running_mode(self):
+
+		postbody = "http://localhost:8080/SetOutput?region=1&feedtype=IMBALANCE&output=4135&status=on"
+		r= requests.post(postbody)
+
+		if r.status_code ==200:
+			print("request successful")
+		else:
+			print("request failed")
+
+		UDP_IP = "localhost"
+		UDP_PORT = 4135
+
+		sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+		sock.bind((UDP_IP, UDP_PORT))
+
+		count = 0
+		while True:
+			data, addr = sock.recvfrom(1024)
+			row = str(data)
+			Symbol = find_between(row, "Symbol=", ",")
+			symbol = Symbol[:-3]
+			time_ = find_between(row, "MarketTime=", ",")[:-4]
+			ts=timestamp_seconds(time_)
+			count+=1
+			if count%100 == 0 :
+				print(row)
+			### ONLY PROCEED IF IT IS IN THE SYMBOL LIST ###57000
+			if symbol in self.symbols and ts>=57000:
+				market = symbol[-2:]
+				
+				side = find_between(row, "Side=", ",")
+				volume =  int(find_between(row, "Volume=", ","))
+				source = find_between(row, "Source=", ",")
+
+				data = self.data[symbol]
+				etf = data["etf"]
+				weight = data["weight"]
+
+				self.etfs[etf].new_imbalance(side,volume,weight,time_,ts)
 
 	def test_mode(self):
 
@@ -135,7 +189,10 @@ class ETF:
 	"""RUN EVERY 5 SECONDS"""
 	def calc_delta(self,time_,ts):
 
-		time.sleep(0.1)
+		global TEST
+		if TEST:
+			time.sleep(0.1)
+
 		self.time = time_
 		self.ts = ts 
 
@@ -316,6 +373,8 @@ class UI:
 				self.update_etf(etf,data,ts)
 
 
+
+
 if __name__ == '__main__':
 
 	multiprocessing.freeze_support()
@@ -323,9 +382,9 @@ if __name__ == '__main__':
 
 	root = tk.Tk() 
 	root.title("Imbalance viewer") 
-	root.geometry("900x500")
+	root.geometry("900x700")
 
-	a= processor(send_pipe)
+	a= processor(send_pipe,TEST)
 	ui = UI(root,receive_pipe)
 	# root.minsize(1600, 1000)
 	# root.maxsize(1800, 1200)
