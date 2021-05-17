@@ -8,7 +8,16 @@ import threading
 
 NEW_ETF ="New ETF"
 UPDATE ="Update"
-
+GREEN = "#97FEA8"
+DEFAULT = "#d9d9d9"
+LIGHTYELLOW = "#fef0b8"
+YELLOW =  "#ECF57C"
+VERYLIGHTGREEN = "#ecf8e1"
+LIGHTGREEN = "#97FEA8"
+STRONGGREEN = "#3DFC68"
+STRONGRED = "#FC433D"
+DEEPGREEN = "#059a12"
+PINK = "#FB7356"
 
 def find_between(data, first, last):
 	try:
@@ -129,7 +138,12 @@ class ETF:
 		time.sleep(0.1)
 		self.time = time_
 		self.ts = ts 
-		self.data["B/S"] = round((self.data["buy"]/(self.data["sell"]+1)),2)
+
+		if self.data["buy"]>self.data["sell"]:
+			self.data["B/S"] = round((self.data["buy"]/(self.data["sell"]+1)),2)
+		else:
+			self.data["B/S"] = round(-(self.data["sell"]/(self.data["buy"]+1)),2)
+
 		self.bsratio_1min_trailing.append(self.data["B/S"])
 		self.buy_1min_trailing.append(self.data["buy"])
 		self.sell_1min_trailing.append(self.data["sell"])
@@ -165,6 +179,8 @@ class UI:
 		self.label_count = 2
 
 		self.etfs = {}
+		self.etfs_labels = {}
+
 		self.init_pannel()
 
 		good = threading.Thread(target=self.update, daemon=True)
@@ -217,31 +233,30 @@ class UI:
 		
 		"""init data, create labels."""
 		self.etfs[etf] = {}
+		self.etfs_labels[etf] = {}
 
 		data = self.etfs[etf]
 
-		data["name"] = tk.StringVar(value=etf)
-		data["buy"] = tk.DoubleVar()
-		data["sell"] = tk.DoubleVar()
-		data["Δbuy"] = tk.DoubleVar()
-		data["Δsell"] = tk.DoubleVar()
-		data["B/S"] = tk.DoubleVar()
-		data["ΔB/S"] = tk.DoubleVar()
+		keys = ["name","buy","Δbuy","sell","Δsell","B/S","ΔB/S"]
 
-		infos = [data["name"],data["buy"],data["Δbuy"],data["sell"],data["Δsell"],data["B/S"],data["ΔB/S"]]
+		for i in keys:
+			data[i] = tk.StringVar()
+
+		data["name"] = tk.StringVar(value=etf)
+
 		l = self.label_count
 
-		for i in range(len(infos)): #Rows
-			self.b = tk.Label(self.bg, textvariable=infos[i],width=11,height=2)#,command=self.rank
-			self.b.configure(activebackground="#f9f9f9")
-			self.b.configure(activeforeground="black")
-			self.b.configure(background="#d9d9d9")
-			self.b.configure(disabledforeground="#a3a3a3")
-			self.b.configure(relief="ridge")
-			self.b.configure(foreground="#000000")
-			self.b.configure(highlightbackground="#d9d9d9")
-			self.b.configure(highlightcolor="black")
-			self.b.grid(row=l, column=i)
+		for i in range(len(keys)): #Rows
+			self.etfs_labels[etf][keys[i]] = tk.Label(self.bg, textvariable=data[keys[i]],width=11,height=2)#,command=self.rank
+			self.etfs_labels[etf][keys[i]].configure(activebackground="#f9f9f9")
+			self.etfs_labels[etf][keys[i]].configure(activeforeground="black")
+			self.etfs_labels[etf][keys[i]].configure(background="#d9d9d9")
+			self.etfs_labels[etf][keys[i]].configure(disabledforeground="#a3a3a3")
+			self.etfs_labels[etf][keys[i]].configure(relief="ridge")
+			self.etfs_labels[etf][keys[i]].configure(foreground="#000000")
+			self.etfs_labels[etf][keys[i]].configure(highlightbackground="#d9d9d9")
+			self.etfs_labels[etf][keys[i]].configure(highlightcolor="black")
+			self.etfs_labels[etf][keys[i]].grid(row=l, column=i)
 
 		self.label_count+=1
 
@@ -254,6 +269,31 @@ class UI:
 		for key,item in data.items():
 			if key== "buy" or key=="sell":
 				self.etfs[etf][key].set(str(round(item/1000000000,2))+"m")
+			elif key== "Δbuy" or key== "Δsell":
+				if item >1:
+					self.etfs_labels[etf][key]["background"] = YELLOW
+				if item >4:
+					self.etfs_labels[etf][key]["background"] = "red"
+				else:
+					self.etfs_labels[etf][key]["background"] = DEFAULT
+				self.etfs[etf][key].set(item)
+			elif key== "B/S":
+				if item <-4:
+					self.etfs_labels[etf][key]["background"] = PINK
+				elif item >4:
+					self.etfs_labels[etf][key]["background"] = LIGHTGREEN
+				else:
+					self.etfs_labels[etf][key]["background"] = DEFAULT
+
+				self.etfs[etf][key].set(item)
+
+			elif key== "ΔB/S":
+				if abs(item) >0.5:
+					self.etfs_labels[etf][key]["background"] = "red"
+				else:
+					self.etfs_labels[etf][key]["background"] = DEFAULT
+
+				self.etfs[etf][key].set(item)
 			else:
 				self.etfs[etf][key].set(item)
 
