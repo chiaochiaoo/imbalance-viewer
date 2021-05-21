@@ -154,12 +154,13 @@ class processor:
 						writer.writerow([row])
 						side = find_between(row, "Side=", ",")
 						volume =  int(find_between(row, "Volume=", ","))
+						#print(self.data[symbol])
+						for data in self.data[symbol]["etf"]:
+							print(data)
+							etf = data[0]
+							weight = data[1]
 
-						data = self.data[symbol]
-						etf = data[0]
-						weight = data[1]
-
-						self.etfs[etf].new_imbalance(symbol,side,volume,weight,time_,ts)
+							self.etfs[etf].new_imbalance(symbol,side,volume,weight,time_,ts)
 
 	def test_mode(self):
 
