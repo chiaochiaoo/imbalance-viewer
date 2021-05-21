@@ -1,5 +1,6 @@
 {
     "all_etfs": [
+        "SPY",
         "XLB",
         "XLC",
         "XLE",
@@ -10,2038 +11,6563 @@
         "XLRE",
         "XLU",
         "XLV",
-        "XLY"
+        "XLY",
+	"XIU"
     ],
-    "LIN": {
-        "etf": "XLB",
-        "weight": 1558
-    },
-    "SHW": {
-        "etf": "XLB",
-        "weight": 692
-    },
-    "APD": {
-        "etf": "XLB",
-        "weight": 663
-    },
-    "FCX": {
-        "etf": "XLB",
-        "weight": 612
-    },
-    "ECL": {
-        "etf": "XLB",
-        "weight": 551
-    },
-    "DOW": {
-        "etf": "XLB",
-        "weight": 507
-    },
-    "NEM": {
-        "etf": "XLB",
-        "weight": 474
-    },
-    "DD": {
-        "etf": "XLB",
-        "weight": 438
-    },
-    "PPG": {
-        "etf": "XLB",
-        "weight": 429
-    },
-    "IFF": {
-        "etf": "XLB",
-        "weight": 351
-    },
-    "CTVA": {
-        "etf": "XLB",
-        "weight": 347
-    },
-    "NUE": {
-        "etf": "XLB",
-        "weight": 305
-    },
-    "BLL": {
-        "etf": "XLB",
-        "weight": 295
-    },
-    "LYB": {
-        "etf": "XLB",
-        "weight": 289
-    },
-    "VMC": {
-        "etf": "XLB",
-        "weight": 256
-    },
-    "IP": {
-        "etf": "XLB",
-        "weight": 250
-    },
-    "MLM": {
-        "etf": "XLB",
-        "weight": 237
-    },
-    "AMCR": {
-        "etf": "XLB",
-        "weight": 197
-    },
-    "CE": {
-        "etf": "XLB",
-        "weight": 193
-    },
-    "ALB": {
-        "etf": "XLB",
-        "weight": 187
-    },
-    "AVY": {
-        "etf": "XLB",
-        "weight": 186
-    },
-    "EMN": {
-        "etf": "XLB",
-        "weight": 176
-    },
-    "WRK": {
-        "etf": "XLB",
-        "weight": 162
-    },
-    "FMC": {
-        "etf": "XLB",
-        "weight": 153
-    },
-    "PKG": {
-        "etf": "XLB",
-        "weight": 149
-    },
-    "MOS": {
-        "etf": "XLB",
-        "weight": 122
-    },
-    "CF": {
-        "etf": "XLB",
-        "weight": 115
-    },
-    "SEE": {
-        "etf": "XLB",
-        "weight": 89
-    },
-    "NaN": {
-        "etf": "XLY",
-        "weight": 0
-    },
-    "FB": {
-        "etf": "XLC",
-        "weight": 2222
-    },
-    "GOOGL": {
-        "etf": "XLC",
-        "weight": 1225
-    },
-    "GOOG": {
-        "etf": "XLC",
-        "weight": 1194
-    },
-    "TMUS": {
-        "etf": "XLC",
-        "weight": 479
-    },
-    "CHTR": {
-        "etf": "XLC",
-        "weight": 472
-    },
-    "T": {
-        "etf": "XLC",
-        "weight": 455
-    },
-    "CMCSA": {
-        "etf": "XLC",
-        "weight": 450
-    },
-    "ATVI": {
-        "etf": "XLC",
-        "weight": 437
-    },
-    "VZ": {
-        "etf": "XLC",
-        "weight": 436
-    },
-    "DIS": {
-        "etf": "XLC",
-        "weight": 419
-    },
-    "NFLX": {
-        "etf": "XLC",
-        "weight": 413
-    },
-    "TWTR": {
-        "etf": "XLC",
-        "weight": 306
-    },
-    "EA": {
-        "etf": "XLC",
-        "weight": 304
-    },
-    "VIAC": {
-        "etf": "XLC",
-        "weight": 174
-    },
-    "TTWO": {
-        "etf": "XLC",
-        "weight": 143
-    },
-    "OMC": {
-        "etf": "XLC",
-        "weight": 134
-    },
-    "LUMN": {
-        "etf": "XLC",
-        "weight": 104
-    },
-    "FOXA": {
-        "etf": "XLC",
-        "weight": 96
-    },
-    "IPG": {
-        "etf": "XLC",
-        "weight": 93
-    },
-    "LYV": {
-        "etf": "XLC",
-        "weight": 85
-    },
-    "DISH": {
-        "etf": "XLC",
-        "weight": 83
-    },
-    "NWSA": {
-        "etf": "XLC",
-        "weight": 77
-    },
-    "DISCK": {
-        "etf": "XLC",
-        "weight": 68
-    },
-    "DISCA": {
-        "etf": "XLC",
-        "weight": 44
-    },
-    "FOX": {
-        "etf": "XLC",
-        "weight": 42
-    },
-    "NWS": {
-        "etf": "XLC",
-        "weight": 22
-    },
-    "XOM": {
-        "etf": "XLE",
-        "weight": 2244
-    },
-    "CVX": {
-        "etf": "XLE",
-        "weight": 2134
-    },
-    "EOG": {
-        "etf": "XLE",
-        "weight": 518
-    },
-    "SLB": {
-        "etf": "XLE",
-        "weight": 496
-    },
-    "MPC": {
-        "etf": "XLE",
-        "weight": 426
-    },
-    "COP": {
-        "etf": "XLE",
-        "weight": 421
-    },
-    "PSX": {
-        "etf": "XLE",
-        "weight": 411
-    },
-    "KMI": {
-        "etf": "XLE",
-        "weight": 392
-    },
-    "VLO": {
-        "etf": "XLE",
-        "weight": 353
-    },
-    "PXD": {
-        "etf": "XLE",
-        "weight": 349
-    },
-    "WMB": {
-        "etf": "XLE",
-        "weight": 344
-    },
-    "OKE": {
-        "etf": "XLE",
-        "weight": 262
-    },
-    "HES": {
-        "etf": "XLE",
-        "weight": 242
-    },
-    "HAL": {
-        "etf": "XLE",
-        "weight": 222
-    },
-    "OXY": {
-        "etf": "XLE",
-        "weight": 222
-    },
-    "BKR": {
-        "etf": "XLE",
-        "weight": 198
-    },
-    "DVN": {
-        "etf": "XLE",
-        "weight": 164
-    },
-    "FANG": {
-        "etf": "XLE",
-        "weight": 154
-    },
-    "MRO": {
-        "etf": "XLE",
-        "weight": 98
-    },
-    "APA": {
-        "etf": "XLE",
-        "weight": 86
-    },
-    "COG": {
-        "etf": "XLE",
-        "weight": 77
-    },
-    "NOV": {
-        "etf": "XLE",
-        "weight": 72
-    },
-    "HFC": {
-        "etf": "XLE",
-        "weight": 56
-    },
-    "XAEM1": {
-        "etf": "XLE",
-        "weight": 0
-    },
-    "BRK.B": {
-        "etf": "XLF",
-        "weight": 1310
-    },
-    "JPM": {
-        "etf": "XLF",
-        "weight": 1180
-    },
-    "BAC": {
-        "etf": "XLF",
-        "weight": 761
-    },
-    "WFC": {
-        "etf": "XLF",
-        "weight": 459
-    },
-    "C": {
-        "etf": "XLF",
-        "weight": 376
-    },
-    "MS": {
-        "etf": "XLF",
-        "weight": 305
-    },
-    "GS": {
-        "etf": "XLF",
-        "weight": 296
-    },
-    "BLK": {
-        "etf": "XLF",
-        "weight": 285
-    },
-    "SCHW": {
-        "etf": "XLF",
-        "weight": 252
-    },
-    "AXP": {
-        "etf": "XLF",
-        "weight": 241
-    },
-    "SPGI": {
-        "etf": "XLF",
-        "weight": 219
-    },
-    "USB": {
-        "etf": "XLF",
-        "weight": 200
-    },
-    "PNC": {
-        "etf": "XLF",
-        "weight": 199
-    },
-    "TFC": {
-        "etf": "XLF",
-        "weight": 195
-    },
-    "CME": {
-        "etf": "XLF",
-        "weight": 185
-    },
-    "CB": {
-        "etf": "XLF",
-        "weight": 182
-    },
-    "COF": {
-        "etf": "XLF",
-        "weight": 171
-    },
-    "MMC": {
-        "etf": "XLF",
-        "weight": 164
-    },
-    "ICE": {
-        "etf": "XLF",
-        "weight": 151
-    },
-    "PGR": {
-        "etf": "XLF",
-        "weight": 149
-    },
-    "AON": {
-        "etf": "XLF",
-        "weight": 136
-    },
-    "MCO": {
-        "etf": "XLF",
-        "weight": 127
-    },
-    "MET": {
-        "etf": "XLF",
-        "weight": 115
-    },
-    "AIG": {
-        "etf": "XLF",
-        "weight": 105
-    },
-    "TROW": {
-        "etf": "XLF",
-        "weight": 103
-    },
-    "PRU": {
-        "etf": "XLF",
-        "weight": 101
-    },
-    "BK": {
-        "etf": "XLF",
-        "weight": 100
-    },
-    "ALL": {
-        "etf": "XLF",
-        "weight": 100
-    },
-    "TRV": {
-        "etf": "XLF",
-        "weight": 95
-    },
-    "MSCI": {
-        "etf": "XLF",
-        "weight": 91
-    },
-    "AFL": {
-        "etf": "XLF",
-        "weight": 85
-    },
-    "DFS": {
-        "etf": "XLF",
-        "weight": 84
-    },
-    "WLTW": {
-        "etf": "XLF",
-        "weight": 81
-    },
-    "FRC": {
-        "etf": "XLF",
-        "weight": 79
-    },
-    "STT": {
-        "etf": "XLF",
-        "weight": 72
-    },
-    "SIVB": {
-        "etf": "XLF",
-        "weight": 72
-    },
-    "AMP": {
-        "etf": "XLF",
-        "weight": 71
-    },
-    "FITB": {
-        "etf": "XLF",
-        "weight": 71
-    },
-    "AJG": {
-        "etf": "XLF",
-        "weight": 68
-    },
-    "NTRS": {
-        "etf": "XLF",
-        "weight": 59
-    },
-    "SYF": {
-        "etf": "XLF",
-        "weight": 59
-    },
-    "HIG": {
-        "etf": "XLF",
-        "weight": 56
-    },
-    "KEY": {
-        "etf": "XLF",
-        "weight": 53
-    },
-    "RF": {
-        "etf": "XLF",
-        "weight": 52
-    },
-    "MTB": {
-        "etf": "XLF",
-        "weight": 51
-    },
-    "CFG": {
-        "etf": "XLF",
-        "weight": 50
-    },
-    "NDAQ": {
-        "etf": "XLF",
-        "weight": 44
-    },
-    "CINF": {
-        "etf": "XLF",
-        "weight": 43
-    },
-    "MKTX": {
-        "etf": "XLF",
-        "weight": 41
-    },
-    "PFG": {
-        "etf": "XLF",
-        "weight": 40
-    },
-    "RJF": {
-        "etf": "XLF",
-        "weight": 39
-    },
-    "HBAN": {
-        "etf": "XLF",
-        "weight": 38
-    },
-    "L": {
-        "etf": "XLF",
-        "weight": 32
-    },
-    "LNC": {
-        "etf": "XLF",
-        "weight": 30
-    },
-    "CBOE": {
-        "etf": "XLF",
-        "weight": 28
-    },
-    "WRB": {
-        "etf": "XLF",
-        "weight": 27
-    },
-    "RE": {
-        "etf": "XLF",
-        "weight": 26
-    },
-    "CMA": {
-        "etf": "XLF",
-        "weight": 26
-    },
-    "GL": {
-        "etf": "XLF",
-        "weight": 24
-    },
-    "IVZ": {
-        "etf": "XLF",
-        "weight": 24
-    },
-    "ZION": {
-        "etf": "XLF",
-        "weight": 23
-    },
-    "BEN": {
-        "etf": "XLF",
-        "weight": 22
-    },
-    "AIZ": {
-        "etf": "XLF",
-        "weight": 22
-    },
-    "PBCT": {
-        "etf": "XLF",
-        "weight": 19
-    },
-    "UNM": {
-        "etf": "XLF",
-        "weight": 15
-    },
-    "HON": {
-        "etf": "XLI",
-        "weight": 496
-    },
-    "UPS": {
-        "etf": "XLI",
-        "weight": 495
-    },
-    "UNP": {
-        "etf": "XLI",
-        "weight": 480
-    },
-    "CAT": {
-        "etf": "XLI",
-        "weight": 417
-    },
-    "RTX": {
-        "etf": "XLI",
-        "weight": 405
-    },
-    "BA": {
-        "etf": "XLI",
-        "weight": 389
-    },
-    "DE": {
-        "etf": "XLI",
-        "weight": 378
-    },
-    "MMM": {
-        "etf": "XLI",
-        "weight": 376
-    },
-    "GE": {
-        "etf": "XLI",
-        "weight": 363
-    },
-    "LMT": {
-        "etf": "XLI",
-        "weight": 305
-    },
-    "CSX": {
-        "etf": "XLI",
-        "weight": 245
-    },
-    "FDX": {
-        "etf": "XLI",
-        "weight": 236
-    },
-    "NSC": {
-        "etf": "XLI",
-        "weight": 231
-    },
-    "ITW": {
-        "etf": "XLI",
-        "weight": 219
-    },
-    "ETN": {
-        "etf": "XLI",
-        "weight": 185
-    },
-    "NOC": {
-        "etf": "XLI",
-        "weight": 183
-    },
-    "EMR": {
-        "etf": "XLI",
-        "weight": 181
-    },
-    "WM": {
-        "etf": "XLI",
-        "weight": 176
-    },
-    "JCI": {
-        "etf": "XLI",
-        "weight": 148
-    },
-    "ROP": {
-        "etf": "XLI",
-        "weight": 146
-    },
-    "LHX": {
-        "etf": "XLI",
-        "weight": 141
-    },
-    "GD": {
-        "etf": "XLI",
-        "weight": 141
-    },
-    "TT": {
-        "etf": "XLI",
-        "weight": 138
-    },
-    "PH": {
-        "etf": "XLI",
-        "weight": 130
-    },
-    "INFO": {
-        "etf": "XLI",
-        "weight": 125
-    },
-    "CMI": {
-        "etf": "XLI",
-        "weight": 124
-    },
-    "CARR": {
-        "etf": "XLI",
-        "weight": 112
-    },
-    "LUV": {
-        "etf": "XLI",
-        "weight": 112
-    },
-    "SWK": {
-        "etf": "XLI",
-        "weight": 111
-    },
-    "PCAR": {
-        "etf": "XLI",
-        "weight": 104
-    },
-    "TDG": {
-        "etf": "XLI",
-        "weight": 102
-    },
-    "OTIS": {
-        "etf": "XLI",
-        "weight": 100
-    },
-    "CTAS": {
-        "etf": "XLI",
-        "weight": 99
-    },
-    "ROK": {
-        "etf": "XLI",
-        "weight": 98
-    },
-    "AME": {
-        "etf": "XLI",
-        "weight": 98
-    },
-    "FAST": {
-        "etf": "XLI",
-        "weight": 97
-    },
-    "EFX": {
-        "etf": "XLI",
-        "weight": 92
-    },
-    "KSU": {
-        "etf": "XLI",
-        "weight": 91
-    },
-    "VRSK": {
-        "etf": "XLI",
-        "weight": 90
-    },
-    "DAL": {
-        "etf": "XLI",
-        "weight": 89
-    },
-    "ODFL": {
-        "etf": "XLI",
-        "weight": 81
-    },
-    "CPRT": {
-        "etf": "XLI",
-        "weight": 80
-    },
-    "URI": {
-        "etf": "XLI",
-        "weight": 77
-    },
-    "FTV": {
-        "etf": "XLI",
-        "weight": 75
-    },
-    "RSG": {
-        "etf": "XLI",
-        "weight": 74
-    },
-    "DOV": {
-        "etf": "XLI",
-        "weight": 69
-    },
-    "XYL": {
-        "etf": "XLI",
-        "weight": 67
-    },
-    "GWW": {
-        "etf": "XLI",
-        "weight": 65
-    },
-    "EXPD": {
-        "etf": "XLI",
-        "weight": 64
-    },
-    "TDY": {
-        "etf": "XLI",
-        "weight": 60
-    },
-    "GNRC": {
-        "etf": "XLI",
-        "weight": 59
-    },
-    "J": {
-        "etf": "XLI",
-        "weight": 57
-    },
-    "IR": {
-        "etf": "XLI",
-        "weight": 56
-    },
-    "IEX": {
-        "etf": "XLI",
-        "weight": 54
-    },
-    "UAL": {
-        "etf": "XLI",
-        "weight": 53
-    },
-    "MAS": {
-        "etf": "XLI",
-        "weight": 52
-    },
-    "TXT": {
-        "etf": "XLI",
-        "weight": 48
-    },
-    "JBHT": {
-        "etf": "XLI",
-        "weight": 47
-    },
-    "FBHS": {
-        "etf": "XLI",
-        "weight": 47
-    },
-    "WAB": {
-        "etf": "XLI",
-        "weight": 45
-    },
-    "LDOS": {
-        "etf": "XLI",
-        "weight": 44
-    },
-    "SNA": {
-        "etf": "XLI",
-        "weight": 44
-    },
-    "AAL": {
-        "etf": "XLI",
-        "weight": 43
-    },
-    "CHRW": {
-        "etf": "XLI",
-        "weight": 42
-    },
-    "PWR": {
-        "etf": "XLI",
-        "weight": 42
-    },
-    "HWM": {
-        "etf": "XLI",
-        "weight": 40
-    },
-    "ALLE": {
-        "etf": "XLI",
-        "weight": 40
-    },
-    "PNR": {
-        "etf": "XLI",
-        "weight": 36
-    },
-    "RHI": {
-        "etf": "XLI",
-        "weight": 32
-    },
-    "NLSN": {
-        "etf": "XLI",
-        "weight": 32
-    },
-    "AOS": {
-        "etf": "XLI",
-        "weight": 31
-    },
-    "HII": {
-        "etf": "XLI",
-        "weight": 28
-    },
-    "ALK": {
-        "etf": "XLI",
-        "weight": 27
-    },
-    "ROL": {
-        "etf": "XLI",
-        "weight": 26
-    },
     "AAPL": {
-        "etf": "XLK",
-        "weight": 2181
+        "etf": [
+            [
+                "SPY",
+                565
+            ],
+            [
+                "XLK",
+                2181
+            ]
+        ]
     },
     "MSFT": {
-        "etf": "XLK",
-        "weight": 2029
-    },
-    "V": {
-        "etf": "XLK",
-        "weight": 421
-    },
-    "NVDA": {
-        "etf": "XLK",
-        "weight": 384
-    },
-    "MA": {
-        "etf": "XLK",
-        "weight": 352
-    },
-    "PYPL": {
-        "etf": "XLK",
-        "weight": 316
-    },
-    "ADBE": {
-        "etf": "XLK",
-        "weight": 254
-    },
-    "CSCO": {
-        "etf": "XLK",
-        "weight": 245
-    },
-    "INTC": {
-        "etf": "XLK",
-        "weight": 245
-    },
-    "CRM": {
-        "etf": "XLK",
-        "weight": 217
-    },
-    "ACN": {
-        "etf": "XLK",
-        "weight": 199
-    },
-    "AVGO": {
-        "etf": "XLK",
-        "weight": 194
-    },
-    "TXN": {
-        "etf": "XLK",
-        "weight": 183
-    },
-    "ORCL": {
-        "etf": "XLK",
-        "weight": 160
-    },
-    "QCOM": {
-        "etf": "XLK",
-        "weight": 159
-    },
-    "IBM": {
-        "etf": "XLK",
-        "weight": 142
-    },
-    "INTU": {
-        "etf": "XLK",
-        "weight": 123
-    },
-    "AMAT": {
-        "etf": "XLK",
-        "weight": 119
-    },
-    "NOW": {
-        "etf": "XLK",
-        "weight": 103
-    },
-    "AMD": {
-        "etf": "XLK",
-        "weight": 102
-    },
-    "FIS": {
-        "etf": "XLK",
-        "weight": 101
-    },
-    "MU": {
-        "etf": "XLK",
-        "weight": 97
-    },
-    "ADP": {
-        "etf": "XLK",
-        "weight": 91
-    },
-    "LRCX": {
-        "etf": "XLK",
-        "weight": 90
-    },
-    "FISV": {
-        "etf": "XLK",
-        "weight": 76
-    },
-    "ADSK": {
-        "etf": "XLK",
-        "weight": 67
-    },
-    "GPN": {
-        "etf": "XLK",
-        "weight": 65
-    },
-    "ADI": {
-        "etf": "XLK",
-        "weight": 61
-    },
-    "NXPI": {
-        "etf": "XLK",
-        "weight": 56
-    },
-    "KLAC": {
-        "etf": "XLK",
-        "weight": 50
-    },
-    "TEL": {
-        "etf": "XLK",
-        "weight": 48
-    },
-    "HPQ": {
-        "etf": "XLK",
-        "weight": 45
-    },
-    "APH": {
-        "etf": "XLK",
-        "weight": 43
-    },
-    "MCHP": {
-        "etf": "XLK",
-        "weight": 42
-    },
-    "CTSH": {
-        "etf": "XLK",
-        "weight": 42
-    },
-    "SNPS": {
-        "etf": "XLK",
-        "weight": 39
-    },
-    "CDNS": {
-        "etf": "XLK",
-        "weight": 38
-    },
-    "GLW": {
-        "etf": "XLK",
-        "weight": 37
-    },
-    "MSI": {
-        "etf": "XLK",
-        "weight": 37
-    },
-    "PAYX": {
-        "etf": "XLK",
-        "weight": 35
-    },
-    "XLNX": {
-        "etf": "XLK",
-        "weight": 32
-    },
-    "ANSS": {
-        "etf": "XLK",
-        "weight": 31
-    },
-    "FTNT": {
-        "etf": "XLK",
-        "weight": 30
-    },
-    "SWKS": {
-        "etf": "XLK",
-        "weight": 30
-    },
-    "ZBRA": {
-        "etf": "XLK",
-        "weight": 28
-    },
-    "KEYS": {
-        "etf": "XLK",
-        "weight": 28
-    },
-    "MXIM": {
-        "etf": "XLK",
-        "weight": 27
-    },
-    "CDW": {
-        "etf": "XLK",
-        "weight": 26
-    },
-    "FLT": {
-        "etf": "XLK",
-        "weight": 25
-    },
-    "VRSN": {
-        "etf": "XLK",
-        "weight": 24
-    },
-    "HPE": {
-        "etf": "XLK",
-        "weight": 23
-    },
-    "TER": {
-        "etf": "XLK",
-        "weight": 22
-    },
-    "WDC": {
-        "etf": "XLK",
-        "weight": 22
-    },
-    "IT": {
-        "etf": "XLK",
-        "weight": 22
-    },
-    "TRMB": {
-        "etf": "XLK",
-        "weight": 21
-    },
-    "BR": {
-        "etf": "XLK",
-        "weight": 21
-    },
-    "QRVO": {
-        "etf": "XLK",
-        "weight": 21
-    },
-    "ANET": {
-        "etf": "XLK",
-        "weight": 20
-    },
-    "AKAM": {
-        "etf": "XLK",
-        "weight": 20
-    },
-    "NTAP": {
-        "etf": "XLK",
-        "weight": 19
-    },
-    "STX": {
-        "etf": "XLK",
-        "weight": 19
-    },
-    "TYL": {
-        "etf": "XLK",
-        "weight": 18
-    },
-    "PAYC": {
-        "etf": "XLK",
-        "weight": 17
-    },
-    "ENPH": {
-        "etf": "XLK",
-        "weight": 17
-    },
-    "CTXS": {
-        "etf": "XLK",
-        "weight": 16
-    },
-    "NLOK": {
-        "etf": "XLK",
-        "weight": 16
-    },
-    "PTC": {
-        "etf": "XLK",
-        "weight": 15
-    },
-    "MPWR": {
-        "etf": "XLK",
-        "weight": 15
-    },
-    "JKHY": {
-        "etf": "XLK",
-        "weight": 13
-    },
-    "FFIV": {
-        "etf": "XLK",
-        "weight": 12
-    },
-    "WU": {
-        "etf": "XLK",
-        "weight": 11
-    },
-    "JNPR": {
-        "etf": "XLK",
-        "weight": 10
-    },
-    "DXC": {
-        "etf": "XLK",
-        "weight": 10
-    },
-    "FLIR": {
-        "etf": "XLK",
-        "weight": 9
-    },
-    "IPGP": {
-        "etf": "XLK",
-        "weight": 8
-    },
-    "PG": {
-        "etf": "XLP",
-        "weight": 1585
-    },
-    "KO": {
-        "etf": "XLP",
-        "weight": 988
-    },
-    "PEP": {
-        "etf": "XLP",
-        "weight": 944
-    },
-    "WMT": {
-        "etf": "XLP",
-        "weight": 896
-    },
-    "COST": {
-        "etf": "XLP",
-        "weight": 480
-    },
-    "MDLZ": {
-        "etf": "XLP",
-        "weight": 469
-    },
-    "PM": {
-        "etf": "XLP",
-        "weight": 467
-    },
-    "MO": {
-        "etf": "XLP",
-        "weight": 434
-    },
-    "CL": {
-        "etf": "XLP",
-        "weight": 376
-    },
-    "EL": {
-        "etf": "XLP",
-        "weight": 356
-    },
-    "KMB": {
-        "etf": "XLP",
-        "weight": 241
-    },
-    "SYY": {
-        "etf": "XLP",
-        "weight": 225
-    },
-    "STZ": {
-        "etf": "XLP",
-        "weight": 209
-    },
-    "GIS": {
-        "etf": "XLP",
-        "weight": 208
-    },
-    "WBA": {
-        "etf": "XLP",
-        "weight": 206
-    },
-    "ADM": {
-        "etf": "XLP",
-        "weight": 200
-    },
-    "MNST": {
-        "etf": "XLP",
-        "weight": 176
-    },
-    "KHC": {
-        "etf": "XLP",
-        "weight": 151
-    },
-    "KR": {
-        "etf": "XLP",
-        "weight": 149
-    },
-    "HSY": {
-        "etf": "XLP",
-        "weight": 134
-    },
-    "TSN": {
-        "etf": "XLP",
-        "weight": 126
-    },
-    "CLX": {
-        "etf": "XLP",
-        "weight": 122
-    },
-    "MKC": {
-        "etf": "XLP",
-        "weight": 120
-    },
-    "CHD": {
-        "etf": "XLP",
-        "weight": 115
-    },
-    "CAG": {
-        "etf": "XLP",
-        "weight": 99
-    },
-    "K": {
-        "etf": "XLP",
-        "weight": 92
-    },
-    "SJM": {
-        "etf": "XLP",
-        "weight": 79
-    },
-    "BF.B": {
-        "etf": "XLP",
-        "weight": 75
-    },
-    "HRL": {
-        "etf": "XLP",
-        "weight": 71
-    },
-    "LW": {
-        "etf": "XLP",
-        "weight": 61
-    },
-    "TAP": {
-        "etf": "XLP",
-        "weight": 57
-    },
-    "CPB": {
-        "etf": "XLP",
-        "weight": 53
-    },
-    "AMT": {
-        "etf": "XLRE",
-        "weight": 1269
-    },
-    "PLD": {
-        "etf": "XLRE",
-        "weight": 961
-    },
-    "CCI": {
-        "etf": "XLRE",
-        "weight": 888
-    },
-    "EQIX": {
-        "etf": "XLRE",
-        "weight": 732
-    },
-    "DLR": {
-        "etf": "XLRE",
-        "weight": 480
-    },
-    "PSA": {
-        "etf": "XLRE",
-        "weight": 476
-    },
-    "SPG": {
-        "etf": "XLRE",
-        "weight": 444
-    },
-    "SBAC": {
-        "etf": "XLRE",
-        "weight": 355
-    },
-    "WELL": {
-        "etf": "XLRE",
-        "weight": 345
-    },
-    "CBRE": {
-        "etf": "XLRE",
-        "weight": 332
-    },
-    "WY": {
-        "etf": "XLRE",
-        "weight": 327
-    },
-    "AVB": {
-        "etf": "XLRE",
-        "weight": 314
-    },
-    "EQR": {
-        "etf": "XLRE",
-        "weight": 290
-    },
-    "O": {
-        "etf": "XLRE",
-        "weight": 277
-    },
-    "ARE": {
-        "etf": "XLRE",
-        "weight": 252
-    },
-    "VTR": {
-        "etf": "XLRE",
-        "weight": 229
-    },
-    "EXR": {
-        "etf": "XLRE",
-        "weight": 219
-    },
-    "ESS": {
-        "etf": "XLRE",
-        "weight": 214
-    },
-    "MAA": {
-        "etf": "XLRE",
-        "weight": 204
-    },
-    "PEAK": {
-        "etf": "XLRE",
-        "weight": 200
-    },
-    "DRE": {
-        "etf": "XLRE",
-        "weight": 191
-    },
-    "BXP": {
-        "etf": "XLRE",
-        "weight": 172
-    },
-    "UDR": {
-        "etf": "XLRE",
-        "weight": 156
-    },
-    "IRM": {
-        "etf": "XLRE",
-        "weight": 138
-    },
-    "HST": {
-        "etf": "XLRE",
-        "weight": 135
-    },
-    "REG": {
-        "etf": "XLRE",
-        "weight": 113
-    },
-    "KIM": {
-        "etf": "XLRE",
-        "weight": 104
-    },
-    "FRT": {
-        "etf": "XLRE",
-        "weight": 89
-    },
-    "VNO": {
-        "etf": "XLRE",
-        "weight": 81
-    },
-    "NEE": {
-        "etf": "XLU",
-        "weight": 1545
-    },
-    "DUK": {
-        "etf": "XLU",
-        "weight": 859
-    },
-    "SO": {
-        "etf": "XLU",
-        "weight": 746
-    },
-    "D": {
-        "etf": "XLU",
-        "weight": 686
-    },
-    "EXC": {
-        "etf": "XLU",
-        "weight": 471
-    },
-    "AEP": {
-        "etf": "XLU",
-        "weight": 466
-    },
-    "SRE": {
-        "etf": "XLU",
-        "weight": 451
-    },
-    "XEL": {
-        "etf": "XLU",
-        "weight": 415
-    },
-    "PEG": {
-        "etf": "XLU",
-        "weight": 341
-    },
-    "WEC": {
-        "etf": "XLU",
-        "weight": 328
-    },
-    "ES": {
-        "etf": "XLU",
-        "weight": 315
-    },
-    "AWK": {
-        "etf": "XLU",
-        "weight": 299
-    },
-    "DTE": {
-        "etf": "XLU",
-        "weight": 295
-    },
-    "ED": {
-        "etf": "XLU",
-        "weight": 295
-    },
-    "PPL": {
-        "etf": "XLU",
-        "weight": 242
-    },
-    "EIX": {
-        "etf": "XLU",
-        "weight": 240
-    },
-    "ETR": {
-        "etf": "XLU",
-        "weight": 231
-    },
-    "AEE": {
-        "etf": "XLU",
-        "weight": 229
-    },
-    "FE": {
-        "etf": "XLU",
-        "weight": 221
-    },
-    "CMS": {
-        "etf": "XLU",
-        "weight": 199
-    },
-    "AES": {
-        "etf": "XLU",
-        "weight": 177
-    },
-    "EVRG": {
-        "etf": "XLU",
-        "weight": 155
-    },
-    "LNT": {
-        "etf": "XLU",
-        "weight": 154
-    },
-    "CNP": {
-        "etf": "XLU",
-        "weight": 147
-    },
-    "ATO": {
-        "etf": "XLU",
-        "weight": 140
-    },
-    "NI": {
-        "etf": "XLU",
-        "weight": 110
-    },
-    "PNW": {
-        "etf": "XLU",
-        "weight": 105
-    },
-    "NRG": {
-        "etf": "XLU",
-        "weight": 89
-    },
-    "JNJ": {
-        "etf": "XLV",
-        "weight": 969
-    },
-    "UNH": {
-        "etf": "XLV",
-        "weight": 839
-    },
-    "PFE": {
-        "etf": "XLV",
-        "weight": 486
-    },
-    "ABT": {
-        "etf": "XLV",
-        "weight": 451
-    },
-    "ABBV": {
-        "etf": "XLV",
-        "weight": 447
-    },
-    "MRK": {
-        "etf": "XLV",
-        "weight": 432
-    },
-    "TMO": {
-        "etf": "XLV",
-        "weight": 391
-    },
-    "MDT": {
-        "etf": "XLV",
-        "weight": 364
-    },
-    "DHR": {
-        "etf": "XLV",
-        "weight": 348
-    },
-    "LLY": {
-        "etf": "XLV",
-        "weight": 337
-    },
-    "BMY": {
-        "etf": "XLV",
-        "weight": 316
-    },
-    "AMGN": {
-        "etf": "XLV",
-        "weight": 314
-    },
-    "CVS": {
-        "etf": "XLV",
-        "weight": 240
-    },
-    "ANTM": {
-        "etf": "XLV",
-        "weight": 210
-    },
-    "ISRG": {
-        "etf": "XLV",
-        "weight": 210
-    },
-    "CI": {
-        "etf": "XLV",
-        "weight": 202
-    },
-    "GILD": {
-        "etf": "XLV",
-        "weight": 188
-    },
-    "ZTS": {
-        "etf": "XLV",
-        "weight": 176
-    },
-    "SYK": {
-        "etf": "XLV",
-        "weight": 176
-    },
-    "BDX": {
-        "etf": "XLV",
-        "weight": 154
-    },
-    "HUM": {
-        "etf": "XLV",
-        "weight": 128
-    },
-    "BSX": {
-        "etf": "XLV",
-        "weight": 128
-    },
-    "VRTX": {
-        "etf": "XLV",
-        "weight": 121
-    },
-    "HCA": {
-        "etf": "XLV",
-        "weight": 119
-    },
-    "EW": {
-        "etf": "XLV",
-        "weight": 119
-    },
-    "REGN": {
-        "etf": "XLV",
-        "weight": 118
-    },
-    "ILMN": {
-        "etf": "XLV",
-        "weight": 118
-    },
-    "IDXX": {
-        "etf": "XLV",
-        "weight": 96
-    },
-    "IQV": {
-        "etf": "XLV",
-        "weight": 95
-    },
-    "BIIB": {
-        "etf": "XLV",
-        "weight": 93
-    },
-    "BAX": {
-        "etf": "XLV",
-        "weight": 91
-    },
-    "ALGN": {
-        "etf": "XLV",
-        "weight": 87
-    },
-    "A": {
-        "etf": "XLV",
-        "weight": 86
-    },
-    "CNC": {
-        "etf": "XLV",
-        "weight": 86
-    },
-    "ALXN": {
-        "etf": "XLV",
-        "weight": 83
-    },
-    "ZBH": {
-        "etf": "XLV",
-        "weight": 75
-    },
-    "DXCM": {
-        "etf": "XLV",
-        "weight": 68
-    },
-    "MCK": {
-        "etf": "XLV",
-        "weight": 68
-    },
-    "MTD": {
-        "etf": "XLV",
-        "weight": 64
-    },
-    "RMD": {
-        "etf": "XLV",
-        "weight": 62
-    },
-    "LH": {
-        "etf": "XLV",
-        "weight": 59
-    },
-    "WST": {
-        "etf": "XLV",
-        "weight": 53
-    },
-    "CERN": {
-        "etf": "XLV",
-        "weight": 51
-    },
-    "WAT": {
-        "etf": "XLV",
-        "weight": 43
-    },
-    "VTRS": {
-        "etf": "XLV",
-        "weight": 42
-    },
-    "COO": {
-        "etf": "XLV",
-        "weight": 41
-    },
-    "DGX": {
-        "etf": "XLV",
-        "weight": 40
-    },
-    "TFX": {
-        "etf": "XLV",
-        "weight": 40
-    },
-    "ABC": {
-        "etf": "XLV",
-        "weight": 38
-    },
-    "CTLT": {
-        "etf": "XLV",
-        "weight": 37
-    },
-    "STE": {
-        "etf": "XLV",
-        "weight": 37
-    },
-    "CAH": {
-        "etf": "XLV",
-        "weight": 36
-    },
-    "CRL": {
-        "etf": "XLV",
-        "weight": 35
-    },
-    "HOLX": {
-        "etf": "XLV",
-        "weight": 35
-    },
-    "INCY": {
-        "etf": "XLV",
-        "weight": 34
-    },
-    "PKI": {
-        "etf": "XLV",
-        "weight": 34
-    },
-    "XRAY": {
-        "etf": "XLV",
-        "weight": 32
-    },
-    "BIO": {
-        "etf": "XLV",
-        "weight": 28
-    },
-    "UHS": {
-        "etf": "XLV",
-        "weight": 27
-    },
-    "ABMD": {
-        "etf": "XLV",
-        "weight": 26
-    },
-    "HSIC": {
-        "etf": "XLV",
-        "weight": 25
-    },
-    "DVA": {
-        "etf": "XLV",
-        "weight": 20
-    },
-    "PRGO": {
-        "etf": "XLV",
-        "weight": 13
+        "etf": [
+            [
+                "SPY",
+                526
+            ],
+            [
+                "XLK",
+                2029
+            ]
+        ]
     },
     "AMZN": {
-        "etf": "XLY",
-        "weight": 2336
+        "etf": [
+            [
+                "SPY",
+                397
+            ],
+            [
+                "XLY",
+                2336
+            ]
+        ]
+    },
+    "FB": {
+        "etf": [
+            [
+                "SPY",
+                216
+            ],
+            [
+                "XLC",
+                2222
+            ]
+        ]
+    },
+    "GOOGL": {
+        "etf": [
+            [
+                "SPY",
+                196
+            ],
+            [
+                "XLC",
+                1225
+            ]
+        ]
+    },
+    "GOOG": {
+        "etf": [
+            [
+                "SPY",
+                191
+            ],
+            [
+                "XLC",
+                1194
+            ]
+        ]
+    },
+    "BRK.B": {
+        "etf": [
+            [
+                "SPY",
+                157
+            ],
+            [
+                "XLF",
+                1310
+            ]
+        ]
+    },
+    "JPM": {
+        "etf": [
+            [
+                "SPY",
+                141
+            ],
+            [
+                "XLF",
+                1180
+            ]
+        ]
+    },
+    "JNJ": {
+        "etf": [
+            [
+                "SPY",
+                128
+            ],
+            [
+                "XLV",
+                969
+            ]
+        ]
     },
     "TSLA": {
-        "etf": "XLY",
-        "weight": 1184
+        "etf": [
+            [
+                "SPY",
+                124
+            ],
+            [
+                "XLY",
+                1184
+            ]
+        ]
+    },
+    "UNH": {
+        "etf": [
+            [
+                "SPY",
+                111
+            ],
+            [
+                "XLV",
+                839
+            ]
+        ]
+    },
+    "V": {
+        "etf": [
+            [
+                "SPY",
+                109
+            ],
+            [
+                "XLK",
+                421
+            ]
+        ]
+    },
+    "NVDA": {
+        "etf": [
+            [
+                "SPY",
+                100
+            ],
+            [
+                "XLK",
+                384
+            ]
+        ]
     },
     "HD": {
-        "etf": "XLY",
-        "weight": 944
+        "etf": [
+            [
+                "SPY",
+                97
+            ],
+            [
+                "XLY",
+                944
+            ]
+        ]
+    },
+    "PG": {
+        "etf": [
+            [
+                "SPY",
+                97
+            ],
+            [
+                "XLP",
+                1585
+            ]
+        ]
+    },
+    "BAC": {
+        "etf": [
+            [
+                "SPY",
+                91
+            ],
+            [
+                "XLF",
+                761
+            ]
+        ]
+    },
+    "MA": {
+        "etf": [
+            [
+                "SPY",
+                91
+            ],
+            [
+                "XLK",
+                352
+            ]
+        ]
+    },
+    "DIS": {
+        "etf": [
+            [
+                "SPY",
+                88
+            ],
+            [
+                "XLC",
+                419
+            ]
+        ]
+    },
+    "PYPL": {
+        "etf": [
+            [
+                "SPY",
+                82
+            ],
+            [
+                "XLK",
+                316
+            ]
+        ]
+    },
+    "XOM": {
+        "etf": [
+            [
+                "SPY",
+                72
+            ],
+            [
+                "XLE",
+                2244
+            ]
+        ]
+    },
+    "CMCSA": {
+        "etf": [
+            [
+                "SPY",
+                71
+            ],
+            [
+                "XLC",
+                450
+            ]
+        ]
+    },
+    "VZ": {
+        "etf": [
+            [
+                "SPY",
+                68
+            ],
+            [
+                "XLC",
+                436
+            ]
+        ]
+    },
+    "ADBE": {
+        "etf": [
+            [
+                "SPY",
+                66
+            ],
+            [
+                "XLK",
+                254
+            ]
+        ]
+    },
+    "INTC": {
+        "etf": [
+            [
+                "SPY",
+                65
+            ],
+            [
+                "XLK",
+                245
+            ]
+        ]
+    },
+    "PFE": {
+        "etf": [
+            [
+                "SPY",
+                64
+            ],
+            [
+                "XLV",
+                486
+            ]
+        ]
+    },
+    "CSCO": {
+        "etf": [
+            [
+                "SPY",
+                64
+            ],
+            [
+                "XLK",
+                245
+            ]
+        ]
+    },
+    "NFLX": {
+        "etf": [
+            [
+                "SPY",
+                62
+            ],
+            [
+                "XLC",
+                413
+            ]
+        ]
+    },
+    "KO": {
+        "etf": [
+            [
+                "SPY",
+                60
+            ],
+            [
+                "XLP",
+                988
+            ]
+        ]
+    },
+    "T": {
+        "etf": [
+            [
+                "SPY",
+                59
+            ],
+            [
+                "XLC",
+                455
+            ]
+        ]
+    },
+    "ABT": {
+        "etf": [
+            [
+                "SPY",
+                59
+            ],
+            [
+                "XLV",
+                451
+            ]
+        ]
+    },
+    "ABBV": {
+        "etf": [
+            [
+                "SPY",
+                59
+            ],
+            [
+                "XLV",
+                447
+            ]
+        ]
+    },
+    "CRM": {
+        "etf": [
+            [
+                "SPY",
+                57
+            ],
+            [
+                "XLK",
+                217
+            ]
+        ]
+    },
+    "MRK": {
+        "etf": [
+            [
+                "SPY",
+                57
+            ],
+            [
+                "XLV",
+                432
+            ]
+        ]
+    },
+    "PEP": {
+        "etf": [
+            [
+                "SPY",
+                57
+            ],
+            [
+                "XLP",
+                944
+            ]
+        ]
+    },
+    "CVX": {
+        "etf": [
+            [
+                "SPY",
+                56
+            ],
+            [
+                "XLE",
+                2134
+            ]
+        ]
+    },
+    "WMT": {
+        "etf": [
+            [
+                "SPY",
+                56
+            ],
+            [
+                "XLP",
+                896
+            ]
+        ]
+    },
+    "WFC": {
+        "etf": [
+            [
+                "SPY",
+                55
+            ],
+            [
+                "XLF",
+                459
+            ]
+        ]
+    },
+    "AVGO": {
+        "etf": [
+            [
+                "SPY",
+                52
+            ],
+            [
+                "XLK",
+                194
+            ]
+        ]
+    },
+    "TMO": {
+        "etf": [
+            [
+                "SPY",
+                52
+            ],
+            [
+                "XLV",
+                391
+            ]
+        ]
+    },
+    "ACN": {
+        "etf": [
+            [
+                "SPY",
+                51
+            ],
+            [
+                "XLK",
+                199
+            ]
+        ]
     },
     "MCD": {
-        "etf": "XLY",
-        "weight": 465
+        "etf": [
+            [
+                "SPY",
+                49
+            ],
+            [
+                "XLY",
+                465
+            ]
+        ]
+    },
+    "MDT": {
+        "etf": [
+            [
+                "SPY",
+                49
+            ],
+            [
+                "XLV",
+                364
+            ]
+        ]
     },
     "NKE": {
-        "etf": "XLY",
-        "weight": 425
+        "etf": [
+            [
+                "SPY",
+                49
+            ],
+            [
+                "XLY",
+                425
+            ]
+        ]
+    },
+    "COST": {
+        "etf": [
+            [
+                "SPY",
+                48
+            ],
+            [
+                "XLP",
+                480
+            ]
+        ]
+    },
+    "TXN": {
+        "etf": [
+            [
+                "SPY",
+                48
+            ],
+            [
+                "XLK",
+                183
+            ]
+        ]
+    },
+    "C": {
+        "etf": [
+            [
+                "SPY",
+                46
+            ],
+            [
+                "XLF",
+                376
+            ]
+        ]
+    },
+    "DHR": {
+        "etf": [
+            [
+                "SPY",
+                45
+            ],
+            [
+                "XLV",
+                348
+            ]
+        ]
+    },
+    "LLY": {
+        "etf": [
+            [
+                "SPY",
+                45
+            ],
+            [
+                "XLV",
+                337
+            ]
+        ]
+    },
+    "LIN": {
+        "etf": [
+            [
+                "SPY",
+                44
+            ],
+            [
+                "XLB",
+                1558
+            ]
+        ]
+    },
+    "UPS": {
+        "etf": [
+            [
+                "SPY",
+                44
+            ],
+            [
+                "XLI",
+                495
+            ]
+        ]
+    },
+    "HON": {
+        "etf": [
+            [
+                "SPY",
+                44
+            ],
+            [
+                "XLI",
+                496
+            ]
+        ]
+    },
+    "PM": {
+        "etf": [
+            [
+                "SPY",
+                43
+            ],
+            [
+                "XLP",
+                467
+            ]
+        ]
+    },
+    "UNP": {
+        "etf": [
+            [
+                "SPY",
+                43
+            ],
+            [
+                "XLI",
+                480
+            ]
+        ]
+    },
+    "QCOM": {
+        "etf": [
+            [
+                "SPY",
+                43
+            ],
+            [
+                "XLK",
+                159
+            ]
+        ]
+    },
+    "BMY": {
+        "etf": [
+            [
+                "SPY",
+                42
+            ],
+            [
+                "XLV",
+                316
+            ]
+        ]
+    },
+    "ORCL": {
+        "etf": [
+            [
+                "SPY",
+                42
+            ],
+            [
+                "XLK",
+                160
+            ]
+        ]
+    },
+    "AMGN": {
+        "etf": [
+            [
+                "SPY",
+                41
+            ],
+            [
+                "XLV",
+                314
+            ]
+        ]
+    },
+    "NEE": {
+        "etf": [
+            [
+                "SPY",
+                41
+            ],
+            [
+                "XLU",
+                1545
+            ]
+        ]
     },
     "LOW": {
-        "etf": "XLY",
-        "weight": 398
+        "etf": [
+            [
+                "SPY",
+                40
+            ],
+            [
+                "XLY",
+                398
+            ]
+        ]
+    },
+    "RTX": {
+        "etf": [
+            [
+                "SPY",
+                37
+            ],
+            [
+                "XLI",
+                405
+            ]
+        ]
+    },
+    "CAT": {
+        "etf": [
+            [
+                "SPY",
+                37
+            ],
+            [
+                "XLI",
+                417
+            ]
+        ]
     },
     "SBUX": {
-        "etf": "XLY",
-        "weight": 353
+        "etf": [
+            [
+                "SPY",
+                37
+            ],
+            [
+                "XLY",
+                353
+            ]
+        ]
+    },
+    "MS": {
+        "etf": [
+            [
+                "SPY",
+                37
+            ],
+            [
+                "XLF",
+                305
+            ]
+        ]
+    },
+    "IBM": {
+        "etf": [
+            [
+                "SPY",
+                37
+            ],
+            [
+                "XLK",
+                142
+            ]
+        ]
+    },
+    "GS": {
+        "etf": [
+            [
+                "SPY",
+                35
+            ],
+            [
+                "XLF",
+                296
+            ]
+        ]
+    },
+    "BA": {
+        "etf": [
+            [
+                "SPY",
+                35
+            ],
+            [
+                "XLI",
+                389
+            ]
+        ]
+    },
+    "BLK": {
+        "etf": [
+            [
+                "SPY",
+                34
+            ],
+            [
+                "XLF",
+                285
+            ]
+        ]
+    },
+    "MMM": {
+        "etf": [
+            [
+                "SPY",
+                34
+            ],
+            [
+                "XLI",
+                376
+            ]
+        ]
+    },
+    "CVS": {
+        "etf": [
+            [
+                "SPY",
+                34
+            ],
+            [
+                "XLV",
+                240
+            ]
+        ]
+    },
+    "INTU": {
+        "etf": [
+            [
+                "SPY",
+                33
+            ],
+            [
+                "XLK",
+                123
+            ]
+        ]
+    },
+    "GE": {
+        "etf": [
+            [
+                "SPY",
+                33
+            ],
+            [
+                "XLI",
+                363
+            ]
+        ]
+    },
+    "AMAT": {
+        "etf": [
+            [
+                "SPY",
+                33
+            ],
+            [
+                "XLK",
+                119
+            ]
+        ]
+    },
+    "DE": {
+        "etf": [
+            [
+                "SPY",
+                32
+            ],
+            [
+                "XLI",
+                378
+            ]
+        ]
+    },
+    "AMT": {
+        "etf": [
+            [
+                "SPY",
+                32
+            ],
+            [
+                "XLRE",
+                1269
+            ]
+        ]
     },
     "TGT": {
-        "etf": "XLY",
-        "weight": 284
+        "etf": [
+            [
+                "SPY",
+                31
+            ],
+            [
+                "XLY",
+                284
+            ]
+        ]
+    },
+    "SCHW": {
+        "etf": [
+            [
+                "SPY",
+                31
+            ],
+            [
+                "XLF",
+                252
+            ]
+        ]
+    },
+    "AXP": {
+        "etf": [
+            [
+                "SPY",
+                28
+            ],
+            [
+                "XLF",
+                241
+            ]
+        ]
+    },
+    "ANTM": {
+        "etf": [
+            [
+                "SPY",
+                28
+            ],
+            [
+                "XLV",
+                210
+            ]
+        ]
+    },
+    "ISRG": {
+        "etf": [
+            [
+                "SPY",
+                28
+            ],
+            [
+                "XLV",
+                210
+            ]
+        ]
+    },
+    "CHTR": {
+        "etf": [
+            [
+                "SPY",
+                28
+            ],
+            [
+                "XLC",
+                472
+            ]
+        ]
+    },
+    "LMT": {
+        "etf": [
+            [
+                "SPY",
+                27
+            ],
+            [
+                "XLI",
+                305
+            ]
+        ]
     },
     "BKNG": {
-        "etf": "XLY",
-        "weight": 245
+        "etf": [
+            [
+                "SPY",
+                27
+            ],
+            [
+                "XLY",
+                245
+            ]
+        ]
+    },
+    "CI": {
+        "etf": [
+            [
+                "SPY",
+                27
+            ],
+            [
+                "XLV",
+                202
+            ]
+        ]
+    },
+    "AMD": {
+        "etf": [
+            [
+                "SPY",
+                26
+            ],
+            [
+                "XLK",
+                102
+            ]
+        ]
+    },
+    "MO": {
+        "etf": [
+            [
+                "SPY",
+                26
+            ],
+            [
+                "XLP",
+                434
+            ]
+        ]
+    },
+    "FIS": {
+        "etf": [
+            [
+                "SPY",
+                26
+            ],
+            [
+                "XLK",
+                101
+            ]
+        ]
+    },
+    "NOW": {
+        "etf": [
+            [
+                "SPY",
+                26
+            ],
+            [
+                "XLK",
+                103
+            ]
+        ]
+    },
+    "MU": {
+        "etf": [
+            [
+                "SPY",
+                26
+            ],
+            [
+                "XLK",
+                97
+            ]
+        ]
+    },
+    "SPGI": {
+        "etf": [
+            [
+                "SPY",
+                26
+            ],
+            [
+                "XLF",
+                219
+            ]
+        ]
+    },
+    "MDLZ": {
+        "etf": [
+            [
+                "SPY",
+                25
+            ],
+            [
+                "XLP",
+                469
+            ]
+        ]
+    },
+    "GILD": {
+        "etf": [
+            [
+                "SPY",
+                25
+            ],
+            [
+                "XLV",
+                188
+            ]
+        ]
+    },
+    "LRCX": {
+        "etf": [
+            [
+                "SPY",
+                25
+            ],
+            [
+                "XLK",
+                90
+            ]
+        ]
+    },
+    "PLD": {
+        "etf": [
+            [
+                "SPY",
+                24
+            ],
+            [
+                "XLRE",
+                961
+            ]
+        ]
+    },
+    "SYK": {
+        "etf": [
+            [
+                "SPY",
+                24
+            ],
+            [
+                "XLV",
+                176
+            ]
+        ]
+    },
+    "USB": {
+        "etf": [
+            [
+                "SPY",
+                24
+            ],
+            [
+                "XLF",
+                200
+            ]
+        ]
+    },
+    "PNC": {
+        "etf": [
+            [
+                "SPY",
+                23
+            ],
+            [
+                "XLF",
+                199
+            ]
+        ]
+    },
+    "ADP": {
+        "etf": [
+            [
+                "SPY",
+                23
+            ],
+            [
+                "XLK",
+                91
+            ]
+        ]
+    },
+    "ZTS": {
+        "etf": [
+            [
+                "SPY",
+                23
+            ],
+            [
+                "XLV",
+                176
+            ]
+        ]
+    },
+    "TFC": {
+        "etf": [
+            [
+                "SPY",
+                23
+            ],
+            [
+                "XLF",
+                195
+            ]
+        ]
     },
     "TJX": {
-        "etf": "XLY",
-        "weight": 231
+        "etf": [
+            [
+                "SPY",
+                23
+            ],
+            [
+                "XLY",
+                231
+            ]
+        ]
+    },
+    "TMUS": {
+        "etf": [
+            [
+                "SPY",
+                23
+            ],
+            [
+                "XLC",
+                479
+            ]
+        ]
+    },
+    "CCI": {
+        "etf": [
+            [
+                "SPY",
+                23
+            ],
+            [
+                "XLRE",
+                888
+            ]
+        ]
+    },
+    "DUK": {
+        "etf": [
+            [
+                "SPY",
+                22
+            ],
+            [
+                "XLU",
+                859
+            ]
+        ]
+    },
+    "CME": {
+        "etf": [
+            [
+                "SPY",
+                22
+            ],
+            [
+                "XLF",
+                185
+            ]
+        ]
+    },
+    "COP": {
+        "etf": [
+            [
+                "SPY",
+                22
+            ],
+            [
+                "XLE",
+                421
+            ]
+        ]
+    },
+    "CSX": {
+        "etf": [
+            [
+                "SPY",
+                22
+            ],
+            [
+                "XLI",
+                245
+            ]
+        ]
+    },
+    "FDX": {
+        "etf": [
+            [
+                "SPY",
+                21
+            ],
+            [
+                "XLI",
+                236
+            ]
+        ]
+    },
+    "CB": {
+        "etf": [
+            [
+                "SPY",
+                21
+            ],
+            [
+                "XLF",
+                182
+            ]
+        ]
+    },
+    "ATVI": {
+        "etf": [
+            [
+                "SPY",
+                21
+            ],
+            [
+                "XLC",
+                437
+            ]
+        ]
+    },
+    "COF": {
+        "etf": [
+            [
+                "SPY",
+                21
+            ],
+            [
+                "XLF",
+                171
+            ]
+        ]
+    },
+    "CL": {
+        "etf": [
+            [
+                "SPY",
+                20
+            ],
+            [
+                "XLP",
+                376
+            ]
+        ]
+    },
+    "BDX": {
+        "etf": [
+            [
+                "SPY",
+                20
+            ],
+            [
+                "XLV",
+                154
+            ]
+        ]
     },
     "GM": {
-        "etf": "XLY",
-        "weight": 188
+        "etf": [
+            [
+                "SPY",
+                20
+            ],
+            [
+                "XLY",
+                188
+            ]
+        ]
+    },
+    "NSC": {
+        "etf": [
+            [
+                "SPY",
+                20
+            ],
+            [
+                "XLI",
+                231
+            ]
+        ]
+    },
+    "MMC": {
+        "etf": [
+            [
+                "SPY",
+                20
+            ],
+            [
+                "XLF",
+                164
+            ]
+        ]
+    },
+    "SHW": {
+        "etf": [
+            [
+                "SPY",
+                20
+            ],
+            [
+                "XLB",
+                692
+            ]
+        ]
+    },
+    "EL": {
+        "etf": [
+            [
+                "SPY",
+                20
+            ],
+            [
+                "XLP",
+                356
+            ]
+        ]
+    },
+    "SO": {
+        "etf": [
+            [
+                "SPY",
+                19
+            ],
+            [
+                "XLU",
+                746
+            ]
+        ]
+    },
+    "FISV": {
+        "etf": [
+            [
+                "SPY",
+                19
+            ],
+            [
+                "XLK",
+                76
+            ]
+        ]
+    },
+    "ITW": {
+        "etf": [
+            [
+                "SPY",
+                19
+            ],
+            [
+                "XLI",
+                219
+            ]
+        ]
+    },
+    "APD": {
+        "etf": [
+            [
+                "SPY",
+                19
+            ],
+            [
+                "XLB",
+                663
+            ]
+        ]
+    },
+    "EQIX": {
+        "etf": [
+            [
+                "SPY",
+                18
+            ],
+            [
+                "XLRE",
+                732
+            ]
+        ]
+    },
+    "ICE": {
+        "etf": [
+            [
+                "SPY",
+                18
+            ],
+            [
+                "XLF",
+                151
+            ]
+        ]
+    },
+    "D": {
+        "etf": [
+            [
+                "SPY",
+                18
+            ],
+            [
+                "XLU",
+                686
+            ]
+        ]
+    },
+    "ADSK": {
+        "etf": [
+            [
+                "SPY",
+                17
+            ],
+            [
+                "XLK",
+                67
+            ]
+        ]
+    },
+    "FCX": {
+        "etf": [
+            [
+                "SPY",
+                17
+            ],
+            [
+                "XLB",
+                612
+            ]
+        ]
+    },
+    "PGR": {
+        "etf": [
+            [
+                "SPY",
+                17
+            ],
+            [
+                "XLF",
+                149
+            ]
+        ]
+    },
+    "NEM": {
+        "etf": [
+            [
+                "SPY",
+                17
+            ],
+            [
+                "XLB",
+                474
+            ]
+        ]
+    },
+    "BSX": {
+        "etf": [
+            [
+                "SPY",
+                17
+            ],
+            [
+                "XLV",
+                128
+            ]
+        ]
+    },
+    "NOC": {
+        "etf": [
+            [
+                "SPY",
+                17
+            ],
+            [
+                "XLI",
+                183
+            ]
+        ]
+    },
+    "GPN": {
+        "etf": [
+            [
+                "SPY",
+                17
+            ],
+            [
+                "XLK",
+                65
+            ]
+        ]
+    },
+    "HUM": {
+        "etf": [
+            [
+                "SPY",
+                16
+            ],
+            [
+                "XLV",
+                128
+            ]
+        ]
+    },
+    "AON": {
+        "etf": [
+            [
+                "SPY",
+                16
+            ],
+            [
+                "XLF",
+                136
+            ]
+        ]
+    },
+    "ETN": {
+        "etf": [
+            [
+                "SPY",
+                16
+            ],
+            [
+                "XLI",
+                185
+            ]
+        ]
+    },
+    "EW": {
+        "etf": [
+            [
+                "SPY",
+                16
+            ],
+            [
+                "XLV",
+                119
+            ]
+        ]
+    },
+    "ADI": {
+        "etf": [
+            [
+                "SPY",
+                16
+            ],
+            [
+                "XLK",
+                61
+            ]
+        ]
+    },
+    "ILMN": {
+        "etf": [
+            [
+                "SPY",
+                16
+            ],
+            [
+                "XLV",
+                118
+            ]
+        ]
+    },
+    "EMR": {
+        "etf": [
+            [
+                "SPY",
+                16
+            ],
+            [
+                "XLI",
+                181
+            ]
+        ]
+    },
+    "VRTX": {
+        "etf": [
+            [
+                "SPY",
+                16
+            ],
+            [
+                "XLV",
+                121
+            ]
+        ]
+    },
+    "WM": {
+        "etf": [
+            [
+                "SPY",
+                16
+            ],
+            [
+                "XLI",
+                176
+            ]
+        ]
+    },
+    "NXPI": {
+        "etf": [
+            [
+                "SPY",
+                16
+            ],
+            [
+                "XLK",
+                56
+            ]
+        ]
+    },
+    "HCA": {
+        "etf": [
+            [
+                "SPY",
+                16
+            ],
+            [
+                "XLV",
+                119
+            ]
+        ]
+    },
+    "REGN": {
+        "etf": [
+            [
+                "SPY",
+                15
+            ],
+            [
+                "XLV",
+                118
+            ]
+        ]
+    },
+    "ECL": {
+        "etf": [
+            [
+                "SPY",
+                15
+            ],
+            [
+                "XLB",
+                551
+            ]
+        ]
+    },
+    "MCO": {
+        "etf": [
+            [
+                "SPY",
+                15
+            ],
+            [
+                "XLF",
+                127
+            ]
+        ]
+    },
+    "DOW": {
+        "etf": [
+            [
+                "SPY",
+                15
+            ],
+            [
+                "XLB",
+                507
+            ]
+        ]
     },
     "DG": {
-        "etf": "XLY",
-        "weight": 137
+        "etf": [
+            [
+                "SPY",
+                14
+            ],
+            [
+                "XLY",
+                137
+            ]
+        ]
+    },
+    "MET": {
+        "etf": [
+            [
+                "SPY",
+                14
+            ],
+            [
+                "XLF",
+                115
+            ]
+        ]
     },
     "F": {
-        "etf": "XLY",
-        "weight": 123
+        "etf": [
+            [
+                "SPY",
+                14
+            ],
+            [
+                "XLY",
+                123
+            ]
+        ]
+    },
+    "EOG": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLE",
+                518
+            ]
+        ]
+    },
+    "KLAC": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLK",
+                50
+            ]
+        ]
+    },
+    "JCI": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLI",
+                148
+            ]
+        ]
+    },
+    "DD": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLB",
+                438
+            ]
+        ]
+    },
+    "ROP": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLI",
+                146
+            ]
+        ]
+    },
+    "IDXX": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLV",
+                96
+            ]
+        ]
+    },
+    "KMB": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLP",
+                241
+            ]
+        ]
+    },
+    "SLB": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLE",
+                496
+            ]
+        ]
     },
     "ROST": {
-        "etf": "XLY",
-        "weight": 122
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLY",
+                122
+            ]
+        ]
     },
-    "ORLY": {
-        "etf": "XLY",
-        "weight": 106
+    "IQV": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLV",
+                95
+            ]
+        ]
+    },
+    "EXC": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLU",
+                471
+            ]
+        ]
+    },
+    "LHX": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLI",
+                141
+            ]
+        ]
+    },
+    "TEL": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLK",
+                48
+            ]
+        ]
+    },
+    "AIG": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLF",
+                105
+            ]
+        ]
+    },
+    "GD": {
+        "etf": [
+            [
+                "SPY",
+                13
+            ],
+            [
+                "XLI",
+                141
+            ]
+        ]
+    },
+    "BIIB": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLV",
+                93
+            ]
+        ]
+    },
+    "TROW": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLF",
+                103
+            ]
+        ]
+    },
+    "AEP": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLU",
+                466
+            ]
+        ]
+    },
+    "TT": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLI",
+                138
+            ]
+        ]
+    },
+    "PRU": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLF",
+                101
+            ]
+        ]
+    },
+    "TWTR": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLC",
+                306
+            ]
+        ]
+    },
+    "DLR": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLRE",
+                480
+            ]
+        ]
+    },
+    "PSA": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLRE",
+                476
+            ]
+        ]
+    },
+    "PPG": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLB",
+                429
+            ]
+        ]
+    },
+    "BAX": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLV",
+                91
+            ]
+        ]
+    },
+    "SYY": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLP",
+                225
+            ]
+        ]
+    },
+    "CNC": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLV",
+                86
+            ]
+        ]
+    },
+    "ALGN": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLV",
+                87
+            ]
+        ]
+    },
+    "SRE": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLU",
+                451
+            ]
+        ]
+    },
+    "ALL": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLF",
+                100
+            ]
+        ]
+    },
+    "BK": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLF",
+                100
+            ]
+        ]
+    },
+    "SPG": {
+        "etf": [
+            [
+                "SPY",
+                12
+            ],
+            [
+                "XLRE",
+                444
+            ]
+        ]
+    },
+    "EA": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLC",
+                304
+            ]
+        ]
+    },
+    "HPQ": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLK",
+                45
+            ]
+        ]
+    },
+    "A": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLV",
+                86
+            ]
+        ]
+    },
+    "TRV": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLF",
+                95
+            ]
+        ]
+    },
+    "MCHP": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLK",
+                42
+            ]
+        ]
+    },
+    "STZ": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLP",
+                209
+            ]
+        ]
+    },
+    "APH": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLK",
+                43
+            ]
+        ]
+    },
+    "PH": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLI",
+                130
+            ]
+        ]
+    },
+    "WBA": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLP",
+                206
+            ]
+        ]
+    },
+    "MPC": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLE",
+                426
+            ]
+        ]
     },
     "EBAY": {
-        "etf": "XLY",
-        "weight": 103
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLY",
+                103
+            ]
+        ]
     },
-    "CMG": {
-        "etf": "XLY",
-        "weight": 101
+    "ALXN": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLV",
+                83
+            ]
+        ]
+    },
+    "CMI": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLI",
+                124
+            ]
+        ]
+    },
+    "GIS": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLP",
+                208
+            ]
+        ]
+    },
+    "INFO": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLI",
+                125
+            ]
+        ]
+    },
+    "ORLY": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLY",
+                106
+            ]
+        ]
+    },
+    "CTSH": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLK",
+                42
+            ]
+        ]
+    },
+    "PSX": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLE",
+                411
+            ]
+        ]
+    },
+    "XEL": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLU",
+                415
+            ]
+        ]
+    },
+    "ADM": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLP",
+                200
+            ]
+        ]
     },
     "MAR": {
-        "etf": "XLY",
-        "weight": 101
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLY",
+                101
+            ]
+        ]
     },
     "APTV": {
-        "etf": "XLY",
-        "weight": 100
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLY",
+                100
+            ]
+        ]
+    },
+    "MSCI": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLF",
+                91
+            ]
+        ]
+    },
+    "CMG": {
+        "etf": [
+            [
+                "SPY",
+                11
+            ],
+            [
+                "XLY",
+                101
+            ]
+        ]
+    },
+    "SNPS": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLK",
+                39
+            ]
+        ]
+    },
+    "KMI": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLE",
+                392
+            ]
+        ]
+    },
+    "AFL": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLF",
+                85
+            ]
+        ]
+    },
+    "LUV": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLI",
+                112
+            ]
+        ]
     },
     "YUM": {
-        "etf": "XLY",
-        "weight": 96
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLY",
+                96
+            ]
+        ]
     },
-    "AZO": {
-        "etf": "XLY",
-        "weight": 92
+    "CARR": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLI",
+                112
+            ]
+        ]
+    },
+    "IFF": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLB",
+                351
+            ]
+        ]
+    },
+    "DFS": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLF",
+                84
+            ]
+        ]
+    },
+    "ZBH": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLV",
+                75
+            ]
+        ]
+    },
+    "CDNS": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLK",
+                38
+            ]
+        ]
+    },
+    "WLTW": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLF",
+                81
+            ]
+        ]
+    },
+    "MSI": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLK",
+                37
+            ]
+        ]
+    },
+    "SWK": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLI",
+                111
+            ]
+        ]
+    },
+    "MNST": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLP",
+                176
+            ]
+        ]
     },
     "HLT": {
-        "etf": "XLY",
-        "weight": 91
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLY",
+                91
+            ]
+        ]
+    },
+    "CTVA": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLB",
+                347
+            ]
+        ]
+    },
+    "GLW": {
+        "etf": [
+            [
+                "SPY",
+                10
+            ],
+            [
+                "XLK",
+                37
+            ]
+        ]
+    },
+    "AZO": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLY",
+                92
+            ]
+        ]
+    },
+    "FRC": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLF",
+                79
+            ]
+        ]
+    },
+    "TDG": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLI",
+                102
+            ]
+        ]
+    },
+    "DXCM": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLV",
+                68
+            ]
+        ]
+    },
+    "PAYX": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLK",
+                35
+            ]
+        ]
+    },
+    "PCAR": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLI",
+                104
+            ]
+        ]
+    },
+    "MCK": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLV",
+                68
+            ]
+        ]
+    },
+    "WMB": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLE",
+                344
+            ]
+        ]
+    },
+    "OTIS": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLI",
+                100
+            ]
+        ]
+    },
+    "VLO": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLE",
+                353
+            ]
+        ]
+    },
+    "SBAC": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLRE",
+                355
+            ]
+        ]
+    },
+    "PEG": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLU",
+                341
+            ]
+        ]
+    },
+    "PXD": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLE",
+                349
+            ]
+        ]
+    },
+    "WELL": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLRE",
+                345
+            ]
+        ]
+    },
+    "AME": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLI",
+                98
+            ]
+        ]
+    },
+    "NUE": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLB",
+                305
+            ]
+        ]
     },
     "DHI": {
-        "etf": "XLY",
-        "weight": 85
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLY",
+                85
+            ]
+        ]
     },
-    "BBY": {
-        "etf": "XLY",
-        "weight": 74
+    "CTAS": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLI",
+                99
+            ]
+        ]
     },
-    "LEN": {
-        "etf": "XLY",
-        "weight": 74
+    "ROK": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLI",
+                98
+            ]
+        ]
+    },
+    "WEC": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLU",
+                328
+            ]
+        ]
+    },
+    "FAST": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLI",
+                97
+            ]
+        ]
+    },
+    "XLNX": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLK",
+                32
+            ]
+        ]
+    },
+    "FITB": {
+        "etf": [
+            [
+                "SPY",
+                9
+            ],
+            [
+                "XLF",
+                71
+            ]
+        ]
+    },
+    "STT": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLF",
+                72
+            ]
+        ]
+    },
+    "AMP": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLF",
+                71
+            ]
+        ]
+    },
+    "DAL": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLI",
+                89
+            ]
+        ]
+    },
+    "MTD": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLV",
+                64
+            ]
+        ]
+    },
+    "SIVB": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLF",
+                72
+            ]
+        ]
+    },
+    "ES": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLU",
+                315
+            ]
+        ]
+    },
+    "CBRE": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLRE",
+                332
+            ]
+        ]
+    },
+    "EFX": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLI",
+                92
+            ]
+        ]
+    },
+    "LYB": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLB",
+                289
+            ]
+        ]
+    },
+    "KHC": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLP",
+                151
+            ]
+        ]
+    },
+    "ANSS": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLK",
+                31
+            ]
+        ]
+    },
+    "RMD": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLV",
+                62
+            ]
+        ]
+    },
+    "VRSK": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLI",
+                90
+            ]
+        ]
+    },
+    "BLL": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLB",
+                295
+            ]
+        ]
+    },
+    "FTNT": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLK",
+                30
+            ]
+        ]
+    },
+    "AJG": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLF",
+                68
+            ]
+        ]
+    },
+    "WY": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLRE",
+                327
+            ]
+        ]
+    },
+    "KR": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLP",
+                149
+            ]
+        ]
+    },
+    "AWK": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLU",
+                299
+            ]
+        ]
+    },
+    "AVB": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLRE",
+                314
+            ]
+        ]
+    },
+    "SWKS": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLK",
+                30
+            ]
+        ]
     },
     "VFC": {
-        "etf": "XLY",
-        "weight": 73
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLY",
+                73
+            ]
+        ]
+    },
+    "DTE": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLU",
+                295
+            ]
+        ]
+    },
+    "KSU": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLI",
+                91
+            ]
+        ]
+    },
+    "ED": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLU",
+                295
+            ]
+        ]
+    },
+    "BBY": {
+        "etf": [
+            [
+                "SPY",
+                8
+            ],
+            [
+                "XLY",
+                74
+            ]
+        ]
+    },
+    "LH": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLV",
+                59
+            ]
+        ]
+    },
+    "LEN": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLY",
+                74
+            ]
+        ]
+    },
+    "ZBRA": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLK",
+                28
+            ]
+        ]
+    },
+    "KEYS": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLK",
+                28
+            ]
+        ]
     },
     "DLTR": {
-        "etf": "XLY",
-        "weight": 70
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLY",
+                70
+            ]
+        ]
+    },
+    "ODFL": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLI",
+                81
+            ]
+        ]
+    },
+    "MXIM": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLK",
+                27
+            ]
+        ]
+    },
+    "HSY": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLP",
+                134
+            ]
+        ]
+    },
+    "EQR": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLRE",
+                290
+            ]
+        ]
+    },
+    "CPRT": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLI",
+                80
+            ]
+        ]
+    },
+    "SYF": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLF",
+                59
+            ]
+        ]
+    },
+    "IP": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLB",
+                250
+            ]
+        ]
+    },
+    "O": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLRE",
+                277
+            ]
+        ]
+    },
+    "VMC": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLB",
+                256
+            ]
+        ]
+    },
+    "NTRS": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLF",
+                59
+            ]
+        ]
+    },
+    "WST": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLV",
+                53
+            ]
+        ]
+    },
+    "CERN": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLV",
+                51
+            ]
+        ]
+    },
+    "CDW": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLK",
+                26
+            ]
+        ]
+    },
+    "HIG": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLF",
+                56
+            ]
+        ]
+    },
+    "OKE": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLE",
+                262
+            ]
+        ]
+    },
+    "TSN": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLP",
+                126
+            ]
+        ]
+    },
+    "FTV": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLI",
+                75
+            ]
+        ]
+    },
+    "VIAC": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLC",
+                174
+            ]
+        ]
+    },
+    "URI": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLI",
+                77
+            ]
+        ]
     },
     "EXPE": {
-        "etf": "XLY",
-        "weight": 63
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLY",
+                63
+            ]
+        ]
     },
-    "TSCO": {
-        "etf": "XLY",
-        "weight": 59
+    "RSG": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLI",
+                74
+            ]
+        ]
     },
-    "GRMN": {
-        "etf": "XLY",
-        "weight": 56
+    "CLX": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLP",
+                122
+            ]
+        ]
+    },
+    "FLT": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLK",
+                25
+            ]
+        ]
+    },
+    "MLM": {
+        "etf": [
+            [
+                "SPY",
+                7
+            ],
+            [
+                "XLB",
+                237
+            ]
+        ]
+    },
+    "HES": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLE",
+                242
+            ]
+        ]
+    },
+    "PPL": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLU",
+                242
+            ]
+        ]
+    },
+    "MKC": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLP",
+                120
+            ]
+        ]
+    },
+    "KEY": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLF",
+                53
+            ]
+        ]
     },
     "CCL": {
-        "etf": "XLY",
-        "weight": 54
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLY",
+                54
+            ]
+        ]
+    },
+    "ARE": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLRE",
+                252
+            ]
+        ]
+    },
+    "EIX": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLU",
+                240
+            ]
+        ]
+    },
+    "WDC": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLK",
+                22
+            ]
+        ]
+    },
+    "RF": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLF",
+                52
+            ]
+        ]
+    },
+    "VRSN": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLK",
+                24
+            ]
+        ]
+    },
+    "CHD": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLP",
+                115
+            ]
+        ]
+    },
+    "DOV": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLI",
+                69
+            ]
+        ]
+    },
+    "ETR": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLU",
+                231
+            ]
+        ]
+    },
+    "OXY": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLE",
+                222
+            ]
+        ]
+    },
+    "TSCO": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLY",
+                59
+            ]
+        ]
+    },
+    "AEE": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLU",
+                229
+            ]
+        ]
+    },
+    "HPE": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLK",
+                23
+            ]
+        ]
+    },
+    "MTB": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLF",
+                51
+            ]
+        ]
+    },
+    "CFG": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLF",
+                50
+            ]
+        ]
+    },
+    "TTWO": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLC",
+                143
+            ]
+        ]
+    },
+    "GRMN": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLY",
+                56
+            ]
+        ]
     },
     "ETSY": {
-        "etf": "XLY",
-        "weight": 54
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLY",
+                54
+            ]
+        ]
     },
-    "KMX": {
-        "etf": "XLY",
-        "weight": 53
+    "XYL": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLI",
+                67
+            ]
+        ]
+    },
+    "TER": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLK",
+                22
+            ]
+        ]
+    },
+    "FE": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLU",
+                221
+            ]
+        ]
+    },
+    "VTR": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLRE",
+                229
+            ]
+        ]
+    },
+    "EXPD": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLI",
+                64
+            ]
+        ]
+    },
+    "IT": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLK",
+                22
+            ]
+        ]
     },
     "CZR": {
-        "etf": "XLY",
-        "weight": 53
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLY",
+                53
+            ]
+        ]
+    },
+    "GWW": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLI",
+                65
+            ]
+        ]
+    },
+    "HAL": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLE",
+                222
+            ]
+        ]
+    },
+    "STX": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLK",
+                19
+            ]
+        ]
+    },
+    "QRVO": {
+        "etf": [
+            [
+                "SPY",
+                6
+            ],
+            [
+                "XLK",
+                21
+            ]
+        ]
+    },
+    "WAT": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLV",
+                43
+            ]
+        ]
+    },
+    "GNRC": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLI",
+                59
+            ]
+        ]
+    },
+    "EXR": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLRE",
+                219
+            ]
+        ]
+    },
+    "KMX": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLY",
+                53
+            ]
+        ]
+    },
+    "COO": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLV",
+                41
+            ]
+        ]
+    },
+    "CE": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLB",
+                193
+            ]
+        ]
+    },
+    "TRMB": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLK",
+                21
+            ]
+        ]
+    },
+    "AMCR": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLB",
+                197
+            ]
+        ]
     },
     "GPC": {
-        "etf": "XLY",
-        "weight": 51
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLY",
+                51
+            ]
+        ]
+    },
+    "VTRS": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLV",
+                42
+            ]
+        ]
+    },
+    "TDY": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLI",
+                60
+            ]
+        ]
+    },
+    "NDAQ": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLF",
+                44
+            ]
+        ]
+    },
+    "ESS": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLRE",
+                214
+            ]
+        ]
+    },
+    "BR": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLK",
+                21
+            ]
+        ]
     },
     "LVS": {
-        "etf": "XLY",
-        "weight": 50
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLY",
+                50
+            ]
+        ]
     },
-    "ULTA": {
-        "etf": "XLY",
-        "weight": 48
+    "AKAM": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLK",
+                20
+            ]
+        ]
+    },
+    "BKR": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLE",
+                198
+            ]
+        ]
     },
     "RCL": {
-        "etf": "XLY",
-        "weight": 47
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLY",
+                47
+            ]
+        ]
+    },
+    "CAG": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLP",
+                99
+            ]
+        ]
+    },
+    "ALB": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLB",
+                187
+            ]
+        ]
+    },
+    "TFX": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLV",
+                40
+            ]
+        ]
     },
     "DRI": {
-        "etf": "XLY",
-        "weight": 47
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLY",
+                47
+            ]
+        ]
+    },
+    "CMS": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLU",
+                199
+            ]
+        ]
+    },
+    "ULTA": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLY",
+                48
+            ]
+        ]
+    },
+    "CINF": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLF",
+                43
+            ]
+        ]
+    },
+    "AVY": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLB",
+                186
+            ]
+        ]
+    },
+    "PEAK": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLRE",
+                200
+            ]
+        ]
+    },
+    "MAA": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLRE",
+                204
+            ]
+        ]
+    },
+    "IR": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLI",
+                56
+            ]
+        ]
+    },
+    "UAL": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLI",
+                53
+            ]
+        ]
+    },
+    "J": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLI",
+                57
+            ]
+        ]
+    },
+    "ANET": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLK",
+                20
+            ]
+        ]
+    },
+    "OMC": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLC",
+                134
+            ]
+        ]
+    },
+    "ABC": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLV",
+                38
+            ]
+        ]
+    },
+    "DGX": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLV",
+                40
+            ]
+        ]
+    },
+    "NTAP": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLK",
+                19
+            ]
+        ]
     },
     "POOL": {
-        "etf": "XLY",
-        "weight": 47
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLY",
+                47
+            ]
+        ]
     },
-    "NVR": {
-        "etf": "XLY",
-        "weight": 46
+    "EMN": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLB",
+                176
+            ]
+        ]
+    },
+    "DRE": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLRE",
+                191
+            ]
+        ]
+    },
+    "MKTX": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLF",
+                41
+            ]
+        ]
+    },
+    "K": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLP",
+                92
+            ]
+        ]
     },
     "DPZ": {
-        "etf": "XLY",
-        "weight": 45
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLY",
+                45
+            ]
+        ]
+    },
+    "AES": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLU",
+                177
+            ]
+        ]
+    },
+    "CTLT": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLV",
+                37
+            ]
+        ]
+    },
+    "PFG": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLF",
+                40
+            ]
+        ]
+    },
+    "ENPH": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLK",
+                17
+            ]
+        ]
+    },
+    "IEX": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLI",
+                54
+            ]
+        ]
+    },
+    "CAH": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLV",
+                36
+            ]
+        ]
+    },
+    "NVR": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLY",
+                46
+            ]
+        ]
+    },
+    "RJF": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLF",
+                39
+            ]
+        ]
+    },
+    "STE": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLV",
+                37
+            ]
+        ]
+    },
+    "HOLX": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLV",
+                35
+            ]
+        ]
     },
     "MGM": {
-        "etf": "XLY",
-        "weight": 42
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLY",
+                42
+            ]
+        ]
     },
-    "PHM": {
-        "etf": "XLY",
-        "weight": 42
+    "TYL": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLK",
+                18
+            ]
+        ]
     },
-    "WHR": {
-        "etf": "XLY",
-        "weight": 42
+    "PKI": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLV",
+                34
+            ]
+        ]
+    },
+    "HBAN": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLF",
+                38
+            ]
+        ]
+    },
+    "CRL": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLV",
+                35
+            ]
+        ]
+    },
+    "MAS": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLI",
+                52
+            ]
+        ]
     },
     "LB": {
-        "etf": "XLY",
-        "weight": 42
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLY",
+                42
+            ]
+        ]
+    },
+    "PAYC": {
+        "etf": [
+            [
+                "SPY",
+                5
+            ],
+            [
+                "XLK",
+                17
+            ]
+        ]
+    },
+    "BXP": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLRE",
+                172
+            ]
+        ]
+    },
+    "WRK": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLB",
+                162
+            ]
+        ]
+    },
+    "NLOK": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLK",
+                16
+            ]
+        ]
+    },
+    "INCY": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLV",
+                34
+            ]
+        ]
+    },
+    "TXT": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLI",
+                48
+            ]
+        ]
+    },
+    "FMC": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLB",
+                153
+            ]
+        ]
+    },
+    "WHR": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLY",
+                42
+            ]
+        ]
+    },
+    "DVN": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLE",
+                164
+            ]
+        ]
+    },
+    "XRAY": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLV",
+                32
+            ]
+        ]
+    },
+    "PHM": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLY",
+                42
+            ]
+        ]
+    },
+    "SJM": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLP",
+                79
+            ]
+        ]
+    },
+    "LNT": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLU",
+                154
+            ]
+        ]
+    },
+    "JBHT": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLI",
+                47
+            ]
+        ]
+    },
+    "PKG": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLB",
+                149
+            ]
+        ]
+    },
+    "FBHS": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLI",
+                47
+            ]
+        ]
+    },
+    "BF.B": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLP",
+                75
+            ]
+        ]
+    },
+    "EVRG": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLU",
+                155
+            ]
+        ]
+    },
+    "LUMN": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLC",
+                104
+            ]
+        ]
+    },
+    "CTXS": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLK",
+                16
+            ]
+        ]
+    },
+    "AAL": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLI",
+                43
+            ]
+        ]
+    },
+    "FANG": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLE",
+                154
+            ]
+        ]
     },
     "LKQ": {
-        "etf": "XLY",
-        "weight": 37
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLY",
+                37
+            ]
+        ]
     },
-    "AAP": {
-        "etf": "XLY",
-        "weight": 36
+    "WAB": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLI",
+                45
+            ]
+        ]
+    },
+    "LDOS": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLI",
+                44
+            ]
+        ]
+    },
+    "UDR": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLRE",
+                156
+            ]
+        ]
+    },
+    "MPWR": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLK",
+                15
+            ]
+        ]
+    },
+    "SNA": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLI",
+                44
+            ]
+        ]
+    },
+    "CNP": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLU",
+                147
+            ]
+        ]
+    },
+    "PTC": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLK",
+                15
+            ]
+        ]
     },
     "WYNN": {
-        "etf": "XLY",
-        "weight": 35
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLY",
+                35
+            ]
+        ]
     },
-    "MHK": {
-        "etf": "XLY",
-        "weight": 35
+    "L": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLF",
+                32
+            ]
+        ]
+    },
+    "HWM": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLI",
+                40
+            ]
+        ]
+    },
+    "CHRW": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLI",
+                42
+            ]
+        ]
+    },
+    "HRL": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLP",
+                71
+            ]
+        ]
+    },
+    "AAP": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLY",
+                36
+            ]
+        ]
+    },
+    "IPG": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLC",
+                93
+            ]
+        ]
+    },
+    "BIO": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLV",
+                28
+            ]
+        ]
+    },
+    "PWR": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLI",
+                42
+            ]
+        ]
+    },
+    "LNC": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLF",
+                30
+            ]
+        ]
+    },
+    "LYV": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLC",
+                85
+            ]
+        ]
+    },
+    "ALLE": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLI",
+                40
+            ]
+        ]
+    },
+    "FOXA": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLC",
+                96
+            ]
+        ]
+    },
+    "ABMD": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLV",
+                26
+            ]
+        ]
     },
     "TPR": {
-        "etf": "XLY",
-        "weight": 34
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLY",
+                34
+            ]
+        ]
     },
-    "BWA": {
-        "etf": "XLY",
-        "weight": 33
+    "ATO": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLU",
+                140
+            ]
+        ]
+    },
+    "MHK": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLY",
+                35
+            ]
+        ]
+    },
+    "UHS": {
+        "etf": [
+            [
+                "SPY",
+                4
+            ],
+            [
+                "XLV",
+                27
+            ]
+        ]
+    },
+    "MOS": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLB",
+                122
+            ]
+        ]
+    },
+    "IRM": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLRE",
+                138
+            ]
+        ]
+    },
+    "HST": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLRE",
+                135
+            ]
+        ]
     },
     "HAS": {
-        "etf": "XLY",
-        "weight": 33
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLY",
+                33
+            ]
+        ]
+    },
+    "CBOE": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLF",
+                28
+            ]
+        ]
+    },
+    "BWA": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLY",
+                33
+            ]
+        ]
+    },
+    "JKHY": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLK",
+                13
+            ]
+        ]
     },
     "PENN": {
-        "etf": "XLY",
-        "weight": 31
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLY",
+                31
+            ]
+        ]
+    },
+    "CF": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLB",
+                115
+            ]
+        ]
+    },
+    "LW": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLP",
+                61
+            ]
+        ]
+    },
+    "HSIC": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLV",
+                25
+            ]
+        ]
+    },
+    "FFIV": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLK",
+                12
+            ]
+        ]
+    },
+    "PNR": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLI",
+                36
+            ]
+        ]
+    },
+    "WRB": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLF",
+                27
+            ]
+        ]
+    },
+    "RE": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLF",
+                26
+            ]
+        ]
+    },
+    "CMA": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLF",
+                26
+            ]
+        ]
+    },
+    "DISH": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLC",
+                83
+            ]
+        ]
     },
     "NWL": {
-        "etf": "XLY",
-        "weight": 28
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLY",
+                28
+            ]
+        ]
     },
     "NCLH": {
-        "etf": "XLY",
-        "weight": 26
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLY",
+                26
+            ]
+        ]
+    },
+    "TAP": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLP",
+                57
+            ]
+        ]
+    },
+    "WU": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLK",
+                11
+            ]
+        ]
+    },
+    "NWSA": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLC",
+                77
+            ]
+        ]
+    },
+    "IVZ": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLF",
+                24
+            ]
+        ]
+    },
+    "GL": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLF",
+                24
+            ]
+        ]
+    },
+    "RHI": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLI",
+                32
+            ]
+        ]
+    },
+    "REG": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLRE",
+                113
+            ]
+        ]
+    },
+    "CPB": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLP",
+                53
+            ]
+        ]
+    },
+    "NLSN": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLI",
+                32
+            ]
+        ]
+    },
+    "NI": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLU",
+                110
+            ]
+        ]
+    },
+    "PNW": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLU",
+                105
+            ]
+        ]
+    },
+    "ZION": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLF",
+                23
+            ]
+        ]
+    },
+    "DXC": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLK",
+                10
+            ]
+        ]
+    },
+    "AOS": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLI",
+                31
+            ]
+        ]
+    },
+    "MRO": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLE",
+                98
+            ]
+        ]
+    },
+    "BEN": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLF",
+                22
+            ]
+        ]
+    },
+    "AIZ": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLF",
+                22
+            ]
+        ]
+    },
+    "DISCK": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLC",
+                68
+            ]
+        ]
+    },
+    "KIM": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLRE",
+                104
+            ]
+        ]
+    },
+    "DVA": {
+        "etf": [
+            [
+                "SPY",
+                3
+            ],
+            [
+                "XLV",
+                20
+            ]
+        ]
+    },
+    "ALK": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLI",
+                27
+            ]
+        ]
+    },
+    "HII": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLI",
+                28
+            ]
+        ]
+    },
+    "SEE": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLB",
+                89
+            ]
+        ]
+    },
+    "JNPR": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLK",
+                10
+            ]
+        ]
+    },
+    "NRG": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLU",
+                89
+            ]
+        ]
+    },
+    "PBCT": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLF",
+                19
+            ]
+        ]
     },
     "PVH": {
-        "etf": "XLY",
-        "weight": 21
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLY",
+                21
+            ]
+        ]
+    },
+    "APA": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLE",
+                86
+            ]
+        ]
+    },
+    "FRT": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLRE",
+                89
+            ]
+        ]
+    },
+    "ROL": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLI",
+                26
+            ]
+        ]
     },
     "LEG": {
-        "etf": "XLY",
-        "weight": 20
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLY",
+                20
+            ]
+        ]
+    },
+    "COG": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLE",
+                77
+            ]
+        ]
+    },
+    "IPGP": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLK",
+                8
+            ]
+        ]
+    },
+    "VNO": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLRE",
+                81
+            ]
+        ]
     },
     "GPS": {
-        "etf": "XLY",
-        "weight": 19
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLY",
+                19
+            ]
+        ]
     },
     "HBI": {
-        "etf": "XLY",
-        "weight": 18
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLY",
+                18
+            ]
+        ]
+    },
+    "NOV": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLE",
+                72
+            ]
+        ]
     },
     "RL": {
-        "etf": "XLY",
-        "weight": 17
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLY",
+                17
+            ]
+        ]
+    },
+    "UNM": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLF",
+                15
+            ]
+        ]
+    },
+    "PRGO": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLV",
+                13
+            ]
+        ]
+    },
+    "FOX": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLC",
+                42
+            ]
+        ]
+    },
+    "DISCA": {
+        "etf": [
+            [
+                "SPY",
+                2
+            ],
+            [
+                "XLC",
+                44
+            ]
+        ]
+    },
+    "HFC": {
+        "etf": [
+            [
+                "SPY",
+                1
+            ],
+            [
+                "XLE",
+                56
+            ]
+        ]
     },
     "UAA": {
-        "etf": "XLY",
-        "weight": 11
+        "etf": [
+            [
+                "SPY",
+                1
+            ],
+            [
+                "XLY",
+                11
+            ]
+        ]
     },
     "UA": {
-        "etf": "XLY",
-        "weight": 10
+        "etf": [
+            [
+                "SPY",
+                1
+            ],
+            [
+                "XLY",
+                10
+            ]
+        ]
+    },
+    "NWS": {
+        "etf": [
+            [
+                "SPY",
+                1
+            ],
+            [
+                "XLC",
+                22
+            ]
+        ]
+    },
+    "SPY": {
+        "etf": [
+            [
+                "SPY",
+                0
+            ]
+        ]
+    },
+    "RY.TO": {
+        "etf": [
+            [
+                "XIU",
+                779
+            ]
+        ]
+    },
+    "SHOP.TO": {
+        "etf": [
+            [
+                "XIU",
+                760
+            ]
+        ]
+    },
+    "TD.TO": {
+        "etf": [
+            [
+                "XIU",
+                717
+            ]
+        ]
+    },
+    "ENB.TO": {
+        "etf": [
+            [
+                "XIU",
+                448
+            ]
+        ]
+    },
+    "BNS.TO": {
+        "etf": [
+            [
+                "XIU",
+                443
+            ]
+        ]
+    },
+    "CNR.TO": {
+        "etf": [
+            [
+                "XIU",
+                438
+            ]
+        ]
+    },
+    "BAM-A.TO": {
+        "etf": [
+            [
+                "XIU",
+                367
+            ]
+        ]
+    },
+    "BMO.TO": {
+        "etf": [
+            [
+                "XIU",
+                350
+            ]
+        ]
+    },
+    "CP.TO": {
+        "etf": [
+            [
+                "XIU",
+                285
+            ]
+        ]
+    },
+    "TRP.TO": {
+        "etf": [
+            [
+                "XIU",
+                277
+            ]
+        ]
+    },
+    "CM.TO": {
+        "etf": [
+            [
+                "XIU",
+                267
+            ]
+        ]
+    },
+    "BCE.TO": {
+        "etf": [
+            [
+                "XIU",
+                245
+            ]
+        ]
+    },
+    "MFC.TO": {
+        "etf": [
+            [
+                "XIU",
+                243
+            ]
+        ]
+    },
+    "ABX.TO": {
+        "etf": [
+            [
+                "XIU",
+                217
+            ]
+        ]
+    },
+    "CNQ.TO": {
+        "etf": [
+            [
+                "XIU",
+                206
+            ]
+        ]
+    },
+    "SU.TO": {
+        "etf": [
+            [
+                "XIU",
+                187
+            ]
+        ]
+    },
+    "SLF.TO": {
+        "etf": [
+            [
+                "XIU",
+                181
+            ]
+        ]
+    },
+    "NTR.TO": {
+        "etf": [
+            [
+                "XIU",
+                180
+            ]
+        ]
+    },
+    "WCN.TO": {
+        "etf": [
+            [
+                "XIU",
+                179
+            ]
+        ]
+    },
+    "CSU.TO": {
+        "etf": [
+            [
+                "XIU",
+                168
+            ]
+        ]
+    },
+    "ATD-B.TO": {
+        "etf": [
+            [
+                "XIU",
+                164
+            ]
+        ]
+    },
+    "T.TO": {
+        "etf": [
+            [
+                "XIU",
+                160
+            ]
+        ]
+    },
+    "FNV.TO": {
+        "etf": [
+            [
+                "XIU",
+                153
+            ]
+        ]
+    },
+    "MG.TO": {
+        "etf": [
+            [
+                "XIU",
+                148
+            ]
+        ]
+    },
+    "NA.TO": {
+        "etf": [
+            [
+                "XIU",
+                140
+            ]
+        ]
+    },
+    "QSR.TO": {
+        "etf": [
+            [
+                "XIU",
+                120
+            ]
+        ]
+    },
+    "FTS.TO": {
+        "etf": [
+            [
+                "XIU",
+                119
+            ]
+        ]
+    },
+    "WPM.TO": {
+        "etf": [
+            [
+                "XIU",
+                107
+            ]
+        ]
+    },
+    "RCI-B.TO": {
+        "etf": [
+            [
+                "XIU",
+                99
+            ]
+        ]
+    },
+    "PPL.TO": {
+        "etf": [
+            [
+                "XIU",
+                97
+            ]
+        ]
+    },
+    "POW.TO": {
+        "etf": [
+            [
+                "XIU",
+                96
+            ]
+        ]
+    },
+    "BIP-UN.TO": {
+        "etf": [
+            [
+                "XIU",
+                91
+            ]
+        ]
+    },
+    "TRI.TO": {
+        "etf": [
+            [
+                "XIU",
+                90
+            ]
+        ]
+    },
+    "AEM.TO": {
+        "etf": [
+            [
+                "XIU",
+                87
+            ]
+        ]
+    },
+    "DOL.TO": {
+        "etf": [
+            [
+                "XIU",
+                77
+            ]
+        ]
+    },
+    "SJR-B.TO": {
+        "etf": [
+            [
+                "XIU",
+                75
+            ]
+        ]
+    },
+    "OTEX.TO": {
+        "etf": [
+            [
+                "XIU",
+                74
+            ]
+        ]
+    },
+    "FM.TO": {
+        "etf": [
+            [
+                "XIU",
+                73
+            ]
+        ]
+    },
+    "EMA.TO": {
+        "etf": [
+            [
+                "XIU",
+                66
+            ]
+        ]
+    },
+    "MRU.TO": {
+        "etf": [
+            [
+                "XIU",
+                65
+            ]
+        ]
+    },
+    "BHC.TO": {
+        "etf": [
+            [
+                "XIU",
+                56
+            ]
+        ]
+    },
+    "KL.TO": {
+        "etf": [
+            [
+                "XIU",
+                56
+            ]
+        ]
+    },
+    "TECK-B.TO": {
+        "etf": [
+            [
+                "XIU",
+                56
+            ]
+        ]
+    },
+    "CVE.TO": {
+        "etf": [
+            [
+                "XIU",
+                56
+            ]
+        ]
+    },
+    "AQN.TO": {
+        "etf": [
+            [
+                "XIU",
+                55
+            ]
+        ]
+    },
+    "CTC-A.TO": {
+        "etf": [
+            [
+                "XIU",
+                52
+            ]
+        ]
+    },
+    "L.TO": {
+        "etf": [
+            [
+                "XIU",
+                51
+            ]
+        ]
+    },
+    "K.TO": {
+        "etf": [
+            [
+                "XIU",
+                51
+            ]
+        ]
+    },
+    "CCL-B.TO": {
+        "etf": [
+            [
+                "XIU",
+                49
+            ]
+        ]
+    },
+    "CAR-UN.TO": {
+        "etf": [
+            [
+                "XIU",
+                44
+            ]
+        ]
+    },
+    "SAP.TO": {
+        "etf": [
+            [
+                "XIU",
+                43
+            ]
+        ]
+    },
+    "GIL.TO": {
+        "etf": [
+            [
+                "XIU",
+                40
+            ]
+        ]
+    },
+    "CCO.TO": {
+        "etf": [
+            [
+                "XIU",
+                38
+            ]
+        ]
+    },
+    "IMO.TO": {
+        "etf": [
+            [
+                "XIU",
+                37
+            ]
+        ]
+    },
+    "IPL.TO": {
+        "etf": [
+            [
+                "XIU",
+                36
+            ]
+        ]
+    },
+    "WN.TO": {
+        "etf": [
+            [
+                "XIU",
+                35
+            ]
+        ]
+    },
+    "WEED.TO": {
+        "etf": [
+            [
+                "XIU",
+                35
+            ]
+        ]
+    },
+    "BPY-UN.TO": {
+        "etf": [
+            [
+                "XIU",
+                33
+            ]
+        ]
+    },
+    "SNC.TO": {
+        "etf": [
+            [
+                "XIU",
+                23
+            ]
+        ]
+    },
+    "XAEM1": {
+        "etf": [
+            [
+                "XLE",
+                0
+            ]
+        ]
+    },
+    "FLIR": {
+        "etf": [
+            [
+                "XLK",
+                9
+            ]
+        ]
     }
 }

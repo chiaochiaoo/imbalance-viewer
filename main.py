@@ -9,6 +9,8 @@ import requests
 import socket
 from datetime import datetime
 
+import pickle
+
 NEW_ETF ="New ETF"
 UPDATE ="Update"
 GREEN = "#97FEA8"
@@ -157,7 +159,7 @@ class processor:
 						etf = data["etf"]
 						weight = data["weight"]
 
-						self.etfs[etf].new_imbalance(side,volume,weight,time_,ts)
+						self.etfs[etf].new_imbalance(symbol,side,volume,weight,time_,ts)
 
 	def test_mode(self):
 
@@ -193,10 +195,14 @@ class processor:
 							volume =  int(find_between(row, "Volume=", ","))
 
 							data = self.data[symbol]
-							etf = data["etf"]
-							weight = data["weight"]
 
-							self.etfs[etf].new_imbalance(side,volume,weight,time_,ts)
+							for data in data["etf"]:
+								etf = data[0]
+								weight = data[1]
+
+								#print(symbol,etf,weight)
+
+								self.etfs[etf].new_imbalance(symbol,side,volume,weight,time_,ts)
 
 					#time.sleep(0.00001)
 
@@ -213,6 +219,7 @@ class ETF:
 		self.data["B/S"] = 0
 		self.data["ΔB/S"] = 0
 
+		self.data["symbols"] = {}
 
 		self.time = ""
 		self.ts = 0
@@ -223,12 +230,20 @@ class ETF:
 		self.sell_1min_trailing = []
 		self.bsratio_1min_trailing = []
 
-	def new_imbalance(self,side,quantity,weight,time_,ts):
+	def new_imbalance(self,symbol,side,quantity,weight,time_,ts):
 
+		#print(self.data,quantity,weight)
 		if side =="B":
 			self.data["buy"]+=quantity*weight
 		elif side =="S":
 			self.data["sell"]+=quantity*weight
+
+		if symbol not in self.data["symbols"]:
+			self.data["symbols"][symbol] = {}
+			self.data["symbols"][symbol]["S"] =0
+			self.data["symbols"][symbol]["B"] =0
+
+		self.data["symbols"][symbol][side] += quantity
 
 		if ts -self.ts >=5:
 			self.calc_delta(time_,ts)
@@ -270,6 +285,23 @@ class ETF:
 		if len(self.bsratio_1min_trailing)>7:
 			self.data["ΔB/S"] = round((self.data["B/S"] - self.bsratio_1min_trailing[-7])/self.bsratio_1min_trailing[-7],2)
 
+		count = 0
+		up = 0
+		down = 0
+
+		for key,item in self.data["symbols"].items():
+			print(key,item)
+			if self.data["symbols"][key]["S"]>self.data["symbols"][key]["B"]:
+				up+=1
+			elif self.data["symbols"][key]["S"]<self.data["symbols"][key]["B"]:
+				down+=1
+			count+=1
+
+		if up>down:
+			self.data["Trend"] = "Buy:"+str(round(up*100/count,2))+"%"
+		else:
+			self.data["Trend"] = "Sell:"+str(round(up*100/count,2))+"%"
+		#print(self.data)
 		self.pipe.send([UPDATE,self.name,self.data,self.time])
 		#print(self.name,self.data["buy"],self.data["Δbuy"],self.data["sell"],self.data["Δsell"],self.data["B/S"],self.delta_bsratio,self.ts)
 
@@ -290,14 +322,19 @@ class UI:
 		good = threading.Thread(target=self.update, daemon=True)
 		good.start()
 
+		if 1:
+			sav = threading.Thread(target=self.save_file, daemon=True)
+			#sav.start() 
+
 	def init_pannel(self):
-		self.labels = {"ETF":10,\
-						"Buy":10,\
-						"ΔBuy":10,\
-						"Sell":10,\
-						"ΔSell":10,\
-						"B/S":10,\
-						"ΔB/S":10,\
+		self.labels = {"ETF":11,\
+						"Buy":11,\
+						"ΔBuy":11,\
+						"Sell":11,\
+						"ΔSell":11,\
+						"Trend":11,\
+						"B/S":11,\
+						"ΔB/S":11,\
 						}
 
 		self.width = list(self.labels.values())
@@ -315,6 +352,18 @@ class UI:
 
 		self.recreate_labels()
 
+	def save_file(self):
+
+		k = []
+		while True:
+
+			d = {}
+			d["time"] = self.time.get()
+
+			for key,item in self.etfs.items():
+				d[key] = self.etfs[key]
+
+			time.sleep(1)
 
 	def recreate_labels(self):
 
@@ -341,7 +390,7 @@ class UI:
 
 		data = self.etfs[etf]
 
-		keys = ["name","buy","Δbuy","sell","Δsell","B/S","ΔB/S"]
+		keys = ["name","buy","Δbuy","sell","Δsell","Trend","B/S","ΔB/S"]
 
 		for i in keys:
 			data[i] = tk.StringVar()
@@ -351,7 +400,7 @@ class UI:
 		l = self.label_count
 
 		for i in range(len(keys)): #Rows
-			self.etfs_labels[etf][keys[i]] = tk.Label(self.bg, textvariable=data[keys[i]],width=11,height=2)#,command=self.rank
+			self.etfs_labels[etf][keys[i]] = tk.Button(self.bg, textvariable=data[keys[i]],width=11,height=2)#,command=self.rank
 			self.etfs_labels[etf][keys[i]].configure(activebackground="#f9f9f9")
 			self.etfs_labels[etf][keys[i]].configure(activeforeground="black")
 			self.etfs_labels[etf][keys[i]].configure(background="#d9d9d9")
@@ -371,35 +420,43 @@ class UI:
 
 		self.time.set(time_)
 		for key,item in data.items():
-			if key== "buy" or key=="sell":
-				self.etfs[etf][key].set(str(round(item/1000000000,2))+"m")
-			elif key== "Δbuy" or key== "Δsell":
-				if item >1:
-					self.etfs_labels[etf][key]["background"] = YELLOW
-				if item >4:
-					self.etfs_labels[etf][key]["background"] = "red"
-				else:
-					self.etfs_labels[etf][key]["background"] = DEFAULT
-				self.etfs[etf][key].set(item)
-			elif key== "B/S":
-				if item <-4:
-					self.etfs_labels[etf][key]["background"] = PINK
-				elif item >4:
-					self.etfs_labels[etf][key]["background"] = LIGHTGREEN
-				else:
-					self.etfs_labels[etf][key]["background"] = DEFAULT
+			if key in self.etfs[etf]:
+				if key== "buy" or key=="sell":
+					self.etfs[etf][key].set(str(round(item/1000000000,2))+"m")
+				elif key== "Δbuy" or key== "Δsell":
+					if item >1:
+						self.etfs_labels[etf][key]["background"] = YELLOW
+					if item >4:
+						self.etfs_labels[etf][key]["background"] = "red"
+					else:
+						self.etfs_labels[etf][key]["background"] = DEFAULT
+					self.etfs[etf][key].set(item)
+				elif key== "B/S":
+					if item <-4:
+						self.etfs_labels[etf][key]["background"] = PINK
+					elif item >4:
+						self.etfs_labels[etf][key]["background"] = LIGHTGREEN
+					else:
+						self.etfs_labels[etf][key]["background"] = DEFAULT
 
-				self.etfs[etf][key].set(item)
+					self.etfs[etf][key].set(item)
 
-			elif key== "ΔB/S":
-				if abs(item) >0.5:
-					self.etfs_labels[etf][key]["background"] = "red"
+				elif key== "ΔB/S":
+					if abs(item) >0.5:
+						self.etfs_labels[etf][key]["background"] = "red"
+					else:
+						self.etfs_labels[etf][key]["background"] = DEFAULT
+
+					self.etfs[etf][key].set(item)
+				elif key== "Trend":
+					if item[:3] == "Buy":
+						self.etfs_labels[etf][key]["background"] = LIGHTGREEN
+					else:
+						self.etfs_labels[etf][key]["background"] = PINK
+
+					self.etfs[etf][key].set(item)
 				else:
-					self.etfs_labels[etf][key]["background"] = DEFAULT
-
-				self.etfs[etf][key].set(item)
-			else:
-				self.etfs[etf][key].set(item)
+					self.etfs[etf][key].set(item)
 
 
 	def update(self):
@@ -429,7 +486,7 @@ if __name__ == '__main__':
 
 	root = tk.Tk() 
 	root.title("Imbalance viewer") 
-	root.geometry("900x700")
+	root.geometry("900x800")
 
 	a= processor(send_pipe,TEST)
 	ui = UI(root,receive_pipe)
