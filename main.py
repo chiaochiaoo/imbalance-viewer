@@ -156,7 +156,6 @@ class processor:
 						volume =  int(find_between(row, "Volume=", ","))
 						#print(self.data[symbol])
 						for data in self.data[symbol]["etf"]:
-							print(data)
 							etf = data[0]
 							weight = data[1]
 
