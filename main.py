@@ -156,8 +156,8 @@ class processor:
 						volume =  int(find_between(row, "Volume=", ","))
 
 						data = self.data[symbol]
-						etf = data["etf"]
-						weight = data["weight"]
+						etf = data[0]
+						weight = data[1]
 
 						self.etfs[etf].new_imbalance(symbol,side,volume,weight,time_,ts)
 
