@@ -486,7 +486,7 @@ if __name__ == '__main__':
 
 	root = tk.Tk() 
 	root.title("Imbalance viewer") 
-	root.geometry("900x800")
+	root.geometry("900x900")
 
 	a= processor(send_pipe,TEST)
 	ui = UI(root,receive_pipe)
