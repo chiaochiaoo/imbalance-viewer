@@ -290,7 +290,7 @@ class ETF:
 		down = 0
 
 		for key,item in self.data["symbols"].items():
-			print(key,item)
+			#print(key,item)
 			if self.data["symbols"][key]["S"]>self.data["symbols"][key]["B"]:
 				up+=1
 			elif self.data["symbols"][key]["S"]<self.data["symbols"][key]["B"]:
