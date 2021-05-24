@@ -182,7 +182,7 @@ class processor:
 						time_ = find_between(row, "MarketTime=", ",")[:-4]
 						ts=timestamp_seconds(time_)
 						procced = False
-						if market =="NQ" and source =="NADQ" and ts>=57000: 
+						if market =="NQ" and source =="NADQ"and ts>=57000: 
 							procced = True
 						elif market =="NY" and source =="CUTN" and ts<57000:
 							proceed = True
@@ -275,15 +275,15 @@ class ETF:
 			self.bsratio_1min_trailing.pop(0)
 
 		if len(self.buy_1min_trailing)>7:
-			self.data["Δbuy"] = round((self.data["buy"] - self.buy_1min_trailing[-7])/self.buy_1min_trailing[-7],2)
+			self.data["Δbuy"] = round((self.data["buy"] - self.buy_1min_trailing[-7])/self.buy_1min_trailing[-7]+1,2)
 
 			#print(self.name,self.data["buy"],self.buy_1min_trailing)
 
 		if len(self.sell_1min_trailing)>7:
-			self.data["Δsell"] = round((self.data["sell"] - self.sell_1min_trailing[-7])/self.sell_1min_trailing[-7],2)
+			self.data["Δsell"] = round((self.data["sell"] - self.sell_1min_trailing[-7])/self.sell_1min_trailing[-7]+1,2)
 
 		if len(self.bsratio_1min_trailing)>7:
-			self.data["ΔB/S"] = round((self.data["B/S"] - self.bsratio_1min_trailing[-7])/self.bsratio_1min_trailing[-7],2)
+			self.data["ΔB/S"] = round((self.data["B/S"] - self.bsratio_1min_trailing[-7])/self.bsratio_1min_trailing[-7]+1,2)
 
 		count = 0
 		up = 0
